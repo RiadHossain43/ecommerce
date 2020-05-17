@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 16px;
+    background-image: url('/images/Header.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+header{
+    height: 100vh;
+}
+#body{
+    display: block;
+}
+#features_adds{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.our_features{
+    padding: 1em;
+    width: 25%;
+    margin: 3em 1em;
+    text-align: center;
+}
+.our_features i{
+    font-size: 5em;
+}
+.our_features h2{
+    margin: 1em;
+}
+.list_title{
+    display: flex;
+    background-color: #EFF1F5;
+}
+.list_title h1{
+    color: gray;
+}
+#products_container{
+    height: auto;
+    background-color: #EFF1F5;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+.product{
+    flex: 1 1 30%;
+    height: auto;
+    margin:1em;
+    box-shadow: 0px 6px 10px gray;
+    border-radius: 4px;
+    overflow: hidden;
+    opacity: 0;
+    cursor: pointer;
+}
+.product_img{
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url('/images/sample_1.jpg');
+}
+.detail{
+    width: 95%;
+    height: 95%;
+    opacity: 0;
+    background-color: black;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dt{
+    display: block;
+    color: white;
+    border-top: 8px solid white;
+    border-bottom:8px solid white ;
+    padding: 20px 0px;
+    transition: .3s;
+}
+.product:hover .detail{
+    width: 75%;
+    height: 75%;
+    opacity: .6;
+}
+.product:hover .dt{
+    padding: 0px;
+}
+.product_detail_short,.product_footer{
+    padding: 0  2em;
+}
+.product_detail_short p{
+    margin:1em 0;
+    font-family: 'Baloo Bhaina 2', cursive;
+    line-height: 150%;
+}
+.product_detail_short h1{
+    margin-top: 1em;
+    line-height: 130%;
+}
+.add_cart_form{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+}
+.add_to_cart_btn{
+    padding: 1em;
+    outline: none;
+    border: 3px solid black;
+}
+.add_to_cart_btn,.product_price{
+   margin: auto 0;
+}
+#featured_products{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+.featured_prod_wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.featured_prod_about,.featured_prod_img{
+    width: 36%;
+    margin: 2em .5em;  
+}
+.featured_prod_img{
+    opacity: 0;
+    position: relative;
+    height: 75vh;
+    overflow: hidden;
+}
+.featured_view_more{
+    color: white;
+    border: 3px solid white;
+    opacity: 0;
+    transition: .5s;
+    padding: 1em;
+}
+.featured_prod_img:hover .featured_view_more{
+    opacity: 1;
+}
+.featured_prod_img:hover .overlay{
+    background-image: linear-gradient(to bottom right,rgba(24,24,24,.5),rgba(45,45,45,.5));
+}
+.featured_prod_img img{
+    max-width:200%;
+    max-height:200%;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.featured_prod_about{
+    padding: 2em 0;
+    opacity: 0;
+}
+.featured_product_about_detail,.featured_product_footer{
+    padding: 0 2em;
+}
+.featured_number{
+    font-size: 10em;
+    font-weight: 000;
+    line-height: 15%;
+    color: white;
+    opacity: .5;
+}
+.featured_title,.featured_about{
+    position: relative;
+    z-index: 1;
+}
+.product_footer{
+    font-size: 20px;
+    color: gray;
+    line-height: 150%;
+    margin-bottom: 1em;
+    padding: 0 1.5em;
+}
+.load_more{
+    position: relative;
+    height: 20vh;
+    width: 100%;
+    background-color:#EFF1F5;
+}
+.load_more_btn{
+    padding: 1em;
+}
+/*    home_utility   */
+
+.section_header{
+    font-size: 4em;
+    margin: 1em auto;
+    line-height: 100%;
+}
+
+@media screen and (max-width:768px){
+    .product{
+        flex: 1 1 100%;
+        margin:1em;
+        box-shadow: 0px 6px 10px gray;
+        border-radius: 4px;
+        overflow: hidden;
+        opacity: 0;
+    }
+    .our_features{
+        padding: 1em;
+        width: 70%;
+    }
+    .featured_prod_about,.featured_prod_img{
+        width: 88%;
+        margin: 2em .5em;  
+    }
+    .section_header{
+        margin: 1em 1em;
+    }
+}

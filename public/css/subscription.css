@@ -1,0 +1,52 @@
+#subscribe{
+    background: transparent;
+    text-align: center;
+}
+
+#subscription_form{
+    width: 100%;
+    margin: 0 auto 4em;
+}
+#sb_txt{
+    font-size: 3em;
+    margin: 1em .5em 0;
+    line-height: 150%;
+    opacity: 0;
+}
+#subscription_form input{
+    height: 3em;
+    width: 40%;
+    background-color: transparent;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid black;
+    padding-left:1em ;
+    opacity: 0;
+    margin: 5px 0;
+}
+#submit{
+    height: 3em;
+    background-color: #87E0E8;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    opacity: 0;
+    padding: 0 1em;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+@media screen and (max-width:768px){
+    #subscription_form{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 1em auto 4em;
+    }
+    #subscription_form input{
+        width: auto;
+    }
+    #sb_txt{
+        line-height: 110%;
+    }
+}

@@ -1,0 +1,176 @@
+<%- include('./includes/head.ejs') %>
+<link rel="stylesheet" type="text/css" href="/css/home.css">
+</head>
+
+<body>
+
+	<%- include('./includes/loading.ejs') %>
+
+	<div id="body">
+
+		<header id="header">
+			<%- include('./includes/navigation.ejs') %>
+			<p id="greetings">Welcome to<br> Geek Minds</p>
+		</header>
+
+		<section id="features_adds">
+			<div class="our_features">
+				<i class="fas fa-truck-moving"></i>
+				<h2>Free Shipping</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				</p>
+			</div>
+			<div class="our_features">
+				<i class="fas fa-hand-holding-usd"></i>
+				<h2>100% MOney Back</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				</p>
+			</div>
+			<div class="our_features">
+				<i class="fas fa-headset"></i>
+				<h2>24/7 online suppport</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				</p>
+			</div>
+		</section>
+
+		<section class="list_title">
+			<h1 class="section_header">Just For YOU</h1>		</section>
+		<section id="products_container">
+			
+			<% for(let i=1; i < 10; i++) { %>
+			<div class="product">
+				<div class="product_img">
+					<div class="detail">
+						<h2 class="dt">View</h2>
+					</div>
+				</div>
+				<div class="product_detail_short">
+					<h1>A fancy title of the product</h1>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing
+						elit. Molestias suscipit voluptate facilis autem
+						laudantium nemo ...</p>
+				</div>
+				<div class="product_footer">
+					<form class="add_cart_form" action="">
+						<h3 class="product_price">Price: 27$</h3>
+						<button class="add_to_cart_btn">Add to cart</button>
+					</form>
+				</div>
+			</div>
+			<% } %>
+		</section>
+		
+		<section class="load_more">
+			<button class="load_more_btn centralize">Load More</button>
+		</section>
+
+		<%- include('./includes/subscription.ejs') %>
+
+		<section class="list_title">
+			<h1 class="section_header">NEW ARRIVALS</h1>
+		</section>
+		<section id="products_container">
+			
+			<% for(let i=1; i < 10; i++) { %>
+			<div class="product">
+				<div class="product_img">
+					<div class="detail">
+						<h2 class="dt">View</h2>
+					</div>
+				</div>
+				<div class="product_detail_short">
+					<h1>A fancy title of the product</h1>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing
+						elit. Molestias suscipit voluptate facilis autem
+						laudantium nemo ...</p>
+				</div>
+				<div class="product_footer">
+					<form class="add_cart_form" action="">
+						<h3 class="product_price">Price: 27$</h3>
+						<button class="add_to_cart_btn">Add to cart</button>
+					</form>
+				</div>
+			</div>
+			<% } %>
+		</section>
+		<section class="load_more">
+			<button class="load_more_btn centralize">Load More</button>
+		</section>
+		
+		<section id="featured_products">
+			<h1 class="section_header">Featured products</h1>
+			<div class="featured_prod_wrapper">
+				<a href="" class="featured_prod_img">
+					<img src="/images/sample_9.png" class="centralize"alt="">
+					<div class="overlay centralize"></div>
+					<h3 class="featured_view_more centralize">View Details</h3>
+					
+				</a>
+				<div class="featured_prod_about">
+					<div class="featured_product_about_detail">
+						<h1 class="featured_title">A fancy title of the product</h1>
+						<h1 class="featured_number">01.</h1>
+						<p class="featured_about">Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Molestias suscipit voluptate facilis autem
+							laudantium nemo ...Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Molestias suscipit voluptate facilis autem
+							laudantium nemo .Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Molestias suscipit voluptate facilis autem
+							laudantium nemo .<br><br>
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Molestias suscipit voluptate facilis autem
+							laudantium nemo .
+						</p>
+						<h3>Peice: 36$</h3>
+					</div>
+					<div class="featured_product_footer">
+						<form class="add_cart_form" action="">
+							<button class="add_to_cart_btn">Add to cart</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="featured_prod_wrapper">
+				<div class="featured_prod_about">
+					<div class="featured_product_about_detail">
+						<h1 class="featured_title">A fancy title of the product</h1>
+						<h1 class="featured_number">02.</h1>
+						<p class="featured_about">Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Molestias suscipit voluptate facilis autem
+							laudantium nemo ...Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Molestias suscipit voluptate facilis autem
+							laudantium nemo .Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Molestias suscipit voluptate facilis autem
+							laudantium nemo .<br><br>
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Molestias suscipit voluptate facilis autem
+							laudantium nemo .
+						</p>
+						<h3>Peice: 36$</h3>
+					</div>
+					<div class="featured_product_footer">
+						<form class="add_cart_form" action="">
+							<button class="add_to_cart_btn">Add to cart</button>
+						</form>
+					</div>
+				</div>
+				<a href="" class="featured_prod_img">
+					<img class="centralize" src="/images/sample_8.jpg" alt="">
+					<div class="overlay centralize"></div>
+					<h3 class="featured_view_more centralize">View Details</h3>
+				</a>
+			</div>
+		</section>
+
+		<%- include('./includes/footer.ejs') %>
+
+	</div>
+
+
+	<script type="module" src="/scripts/home.js"></script>
+
+	<% -include('./includes/end.ejs') %>
