@@ -42,10 +42,10 @@ let featured_sec_anim = () => {
     for (let i = 0; i < featured_prod_imgs.length; i++) {
         let featured_prod_img = featured_prod_imgs[i].getBoundingClientRect();
         if (featured_prod_img.top <= window.innerHeight * .75 && i % 2 == 0) {
-            util.set_style(featured_prod_imgs[i], { opacity: 1, animation: 'pullLeft 1.5s' });            
+            util.set_style(featured_prod_imgs[i], { opacity: 1, animation: 'pullLeft 1.5s ease' });            
         }
         if (featured_prod_img.top <= window.innerHeight * .75 && i % 2 != 0) {
-            util.set_style(featured_prod_imgs[i], { opacity: 1, animation: 'pullRight 1.5s' });
+            util.set_style(featured_prod_imgs[i], { opacity: 1, animation: 'pullRight 1.5s ease' });
         }
         if (window.innerWidth <= 768) {
             if (featured_prod_img.top >= 0 && featured_prod_img.bottom <= (window.innerHeight * 1.15 || document.documentElement.clientHeight * 1.15)) {
@@ -68,8 +68,10 @@ let featured_sec_anim = () => {
 // homepage animation handling...
 
 window.addEventListener('scroll', () => {
+    console.log(window.scrollY)
     prod_sec_Anim();
     featured_sec_anim();
+    util.scroll_top_event();
     subscribe.animate();
     navigation.animate();
 });

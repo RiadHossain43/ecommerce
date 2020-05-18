@@ -7,12 +7,13 @@ body{
     padding: 0;
     font-family: 'Baloo Bhaina 2', cursive;
     font-size: 16px;
-    background-image: url('/images/Header.jpg');
+    background-image: url('/images/home_back_2.jpg');
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
 }
 header{
-    height: 100vh;
+    height: 100vh; 
 }
 #body{
     display: block;
@@ -200,6 +201,18 @@ header{
 .load_more_btn{
     padding: 1em;
 }
+.scroll_top{
+    position: fixed;
+    top: 90%;
+    left: 90%;
+    padding: .5em  1em;
+    opacity: 0;
+    transition: 1s;
+    z-index: -1;
+    background-color: black;
+    color: white;
+}
+
 /*    home_utility   */
 
 .section_header{
