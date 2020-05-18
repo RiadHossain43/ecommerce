@@ -158,6 +158,8 @@ header{
 .featured_prod_img img{
     max-width:200%;
     max-height:200%;
+    min-width: 130%;
+    min-height: 130%;
 }
 .overlay{
     width: 100%;

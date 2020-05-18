@@ -42,13 +42,10 @@ let featured_sec_anim = () => {
     for (let i = 0; i < featured_prod_imgs.length; i++) {
         let featured_prod_img = featured_prod_imgs[i].getBoundingClientRect();
         if (featured_prod_img.top <= window.innerHeight * .75 && i % 2 == 0) {
-            util.set_style(featured_prod_imgs[i], { opacity: 1, animation: 'pullLeft 1.5s ease' });
-            util.set_style(featured_prod_abouts[i], { opacity: 1, animation: 'fadeInLeft 2s' });
-            
+            util.set_style(featured_prod_imgs[i], { opacity: 1, animation: 'pullLeft 1.5s' });            
         }
         if (featured_prod_img.top <= window.innerHeight * .75 && i % 2 != 0) {
-            util.set_style(featured_prod_imgs[i], { opacity: 1, animation: 'pullRight 1.5s ease' });
-            util.set_style(featured_prod_abouts[i], { opacity: 1, animation: 'fadeInRight 2s' });
+            util.set_style(featured_prod_imgs[i], { opacity: 1, animation: 'pullRight 1.5s' });
         }
         if (window.innerWidth <= 768) {
             if (featured_prod_img.top >= 0 && featured_prod_img.bottom <= (window.innerHeight * 1.15 || document.documentElement.clientHeight * 1.15)) {
@@ -58,6 +55,13 @@ let featured_sec_anim = () => {
                 util.set_style(featured_view_more[i], { opacity: '0' });
             }
         }
+    }
+    for (let i = 0; i < featured_prod_abouts.length; i++) {
+        let featured_prod_about = featured_prod_abouts[i].getBoundingClientRect();
+        if (featured_prod_about.top <= window.innerHeight * .75 && i % 2 == 0)
+            util.set_style(featured_prod_abouts[i], { opacity: 1, animation: 'fadeInLeft 2s' });
+        if (featured_prod_about.top <= window.innerHeight * .75 && i % 2 != 0) 
+            util.set_style(featured_prod_abouts[i], { opacity: 1, animation: 'fadeInRight 2s' });
     }
 }
 
