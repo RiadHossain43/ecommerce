@@ -175,8 +175,8 @@ header{
     font-size: 10em;
     font-weight: 000;
     line-height: 15%;
-    color: white;
-    opacity: .5;
+    color: black;
+    opacity: .3;
 }
 .featured_title,.featured_about{
     position: relative;
@@ -224,6 +224,7 @@ header{
         margin: 2em .5em;  
     }
     .section_header{
+        font-size: 3em;
         margin: 1em 1em;
     }
 }

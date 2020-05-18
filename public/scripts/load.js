@@ -1,4 +1,4 @@
-let load = () => {
+ let load = () => {
 
     window.addEventListener('load', () => {
         let loader = util.eleID('loader');
