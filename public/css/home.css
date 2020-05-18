@@ -7,10 +7,10 @@ body{
     padding: 0;
     font-family: 'Baloo Bhaina 2', cursive;
     font-size: 16px;
-    background-image: url('/images/home_back_2.jpg');
+    background-image: url('/images/home_back_1.png');
     background-attachment: fixed;
-    /* background-size: cover; */
     background-position: center;
+    transition: 2s;
 }
 header{
     height: 100vh; 
@@ -70,6 +70,34 @@ header{
     align-items: center;
     background-image:url('/images/sample_1.jpg');
 }
+/* .product_img:nth-child(1){
+    background-image:url('/images/sample_1.jpg');
+}
+.product_img:nth-child(2){
+    background-image:url('/images/sample_2.png');
+}
+.product_img:nth-child(3){
+    background-image:url('/images/sample_3.png');
+}
+.product_img:nth-child(4){
+    background-image:url('/images/sample_4.png');
+}
+.product_img:nth-child(5){
+    background-image:url('/images/sample_5.png');
+}
+.product_img:nth-child(6){
+    background-image:url('/images/sample_6.jpg');
+}
+.product_img:nth-child(7){
+    background-image:url('/images/sample_7.jpg');
+}
+.product_img:nth-child(8){
+    background-image:url('/images/sample_8.jpg');
+}
+.product_img:nth-child(9){
+    background-image:url('/images/sample_9.png');
+} */
+
 .detail{
     width: 95%;
     height: 95%;
@@ -222,6 +250,10 @@ header{
 }
 
 @media screen and (max-width:768px){
+    body{
+        background-position-x: 170vw;
+        background-position-y: 160vh;
+    }
     .product{
         flex: 1 1 100%;
         margin:1em;

@@ -64,11 +64,19 @@ let featured_sec_anim = () => {
             util.set_style(featured_prod_abouts[i], { opacity: 1, animation: 'fadeInRight 2s' });
     }
 }
+let body_back_img = ()=>{
+    const body = document.getElementsByTagName('body'); 
+    const img_path = ['/images/home_back_1.png','/images/home_back_4.jpg'];
+    let it = 1;
+    setInterval(()=>{
+        if(it>1) it = 0;
+        util.set_style(body[0],{backgroundImage:`url('${img_path[it]}')`});
+        it++;
+    },5000);
+}
 
 // homepage animation handling...
-
 window.addEventListener('scroll', () => {
-    console.log(window.scrollY)
     prod_sec_Anim();
     featured_sec_anim();
     util.scroll_top_event();
@@ -78,5 +86,27 @@ window.addEventListener('scroll', () => {
 
 
 // utility function calls if needed...
-
+body_back_img();
 navigation.handleMenu();
+
+
+
+
+// temoporary development helper
+
+let temp_prod_img = ()=>{
+    let prod_img = util.eleCls('product_img')
+    let prod_img_path = [
+        '/images/sample_1.jpg','/images/sample_2.png',
+        '/images/sample_3.png','/images/sample_4.png',
+        '/images/sample_5.png','/images/sample_6.jpg',
+        '/images/sample_7.jpg','/images/sample_8.jpg',
+        '/images/sample_9.png'
+    ]
+    let it = 0
+    for(let i = 0;i<prod_img.length;i++){
+        util.set_style(prod_img[i],{backgroundImage:`url('${prod_img_path[it]}')`})
+        it = (it>=8) ? it = 0 : ++it
+    }
+}
+temp_prod_img()
