@@ -1,0 +1,81 @@
+<%- include('./includes/head.ejs') %>
+    <link rel="stylesheet" type="text/css" href="/css/product_detail.css">
+    <link rel="stylesheet" type="text/css" href="/css/review.css">
+</head>
+
+<body>
+
+    <header id="header">
+        <%- include('./includes/navigation.ejs') %>
+        <div id="head_add">this is the haed add</div>
+    </header>
+
+    <section id="product_overview">
+        <div id="product_img_container">
+            <img src="/images/sample_6.jpg" alt="" class="centralize">
+        </div>
+        <div id="buying_info">
+            <h3 id="prodduct_title">A fancy product title</h3>
+            <h2 id="product_price">$ 60.32</h2>
+            <h5 id="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <i class="far fa-star"></i>
+                <h5>(72 ratings)</h5>
+            </h5>
+            <p id="about">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <h2 id="sizes">Pick your size:</h2>
+            <button class="size">12</button>
+            <button class="size">14</button>
+            <button class="size">16</button>
+            <button class="size">18</button>
+            <button class="size">20</button>
+            <button class="size">22</button>
+            <button class="size">24</button>
+            <h1 id="mp">More precise options</h1>
+            <button class="size">o1</button>
+            <button class="size">o2</button>
+            <form id="product_detail_form" action="">
+                <button id="amount_decrease">-</button>
+                <input type="text" value="1" name="amount" id="amount">
+                <button id="amount_increase">+</button>
+                <input type="submit" value="ADD TO CART" id="add_to_cart">
+            </form>
+        </div>
+        <div id="full_detail">
+            <ul id="detail_links">
+               <li  class="detail_link"><a href="">Description</a></li>
+               <li  class="detail_link"><a href="">Manufacturer</a></li> 
+               <li  class="detail_link"><a href="">Review</a></li>  
+            </ul>
+            <div id="detail_display_box">
+                <!-- <% for(let i=1; i < 6; i++) { %>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Quam consectetur dolor autem sapiente quod, 
+                        eum nulla ipsam similique vel veniam aliquid 
+                        optio dolores illo asperiores eaque aut velit magnam vero.
+                        Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Quam consectetur dolor autem sapiente quod, 
+                        eum nulla ipsam similique vel veniam aliquid 
+                    </p>
+                <% } %> -->
+                <%- include('./includes/review.ejs') %>
+            </div>
+        </div>
+    </section>
+
+    <%- include('./includes/footer.ejs') %>
+
+    <script type="module" src="/scripts/product_detail.js"></script>
+
+    <% -include('./includes/end.ejs') %>

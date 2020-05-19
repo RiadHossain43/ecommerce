@@ -1,0 +1,140 @@
+body{
+    font-family: 'Baloo Bhaina 2', cursive;  
+    font-size: 18px;
+}
+#header{
+    background-color:darkorange;
+}
+#head_add{
+    color: white;
+    text-align: center;
+    padding: 2em;
+    line-height: 130%;
+}
+#product_overview{
+    display: flex;
+    padding: 0 4em;
+    margin-top: 2em;
+    flex-wrap: wrap;
+    line-height: 150%;
+}
+#product_img_container{
+    position: relative;
+    width: 57%;
+    height: 90vh;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 1px solid lightgray;
+    border-radius: 1px;
+}
+#product_img_container img{
+    max-width: 200%;
+    max-height: 200%;
+    min-width: 150%;
+    min-height: 150%;
+}
+#buying_info{
+    width: 35%;
+    margin: 0 auto;
+}
+#prodduct_title{
+   font-size: 25px;
+   margin: .6em 0;
+}
+#product_price{
+    font-size: 30px;
+}
+
+#ratings{
+    color: orange;
+}
+#about{
+    margin: 1em 0;
+    text-align: justify;
+}
+#sizes{
+    margin: .2em 0;
+    
+}
+#mp{
+    margin: .2em 0;
+}
+.size{
+    padding: 1em;
+    margin: .6em 0;
+    border-radius: 3px;
+    background: lightgray;
+}
+.size:focus{
+    background: gray;
+}
+#product_detail_form{
+}
+#amount_increase{
+    
+}
+#amount_decrease{
+   
+}
+#amount{
+    text-align: center;
+    background-color: #EEEEEE;
+}
+#amount,#amount_decrease,#add_to_cart,#amount_increase{
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 3px;
+}
+#add_to_cart{
+    background-color: darkorange;
+    display: block;
+    color: white;
+}
+#full_detail{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+}
+#detail_links{
+    display: flex;
+    flex-wrap: wrap;
+}
+#detail_links a{
+    color: black;
+}
+.detail_link{
+    margin:.5em 1em .5em 0;
+    padding: 1em;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#detail_display_box{
+    border: 1px solid black;
+    padding: 1.5em;
+    text-align: justify;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*  helper class*/
+
+@media screen and (max-width:992px){
+    body{
+        background-position-x: 170vw;
+        background-position-y: 160vh;
+    }
+    #product_overview{
+        padding:0 1em;
+    }
+    #product_img_container{
+        width: 100%;
+    }
+    #buying_info{
+        width: 100%;
+    }
+    #product_img_container{
+        height: 70vh;
+    }
+}

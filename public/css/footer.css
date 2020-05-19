@@ -5,6 +5,9 @@
     flex-wrap: wrap;
     padding: 0 4em;
 }
+.site_footer a{
+    color: white;
+}
 .footer_row{
     display: flex;
     flex-wrap: wrap;

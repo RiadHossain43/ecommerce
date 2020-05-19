@@ -1,0 +1,45 @@
+#reviews{
+    width: 60%;
+}
+#review_amount{
+    margin:.5em 0;
+}
+#give_review{
+    margin:.5em 3.5em ;
+}
+#star_percentage{
+    width: 40%;
+}
+.star_percentage_info{
+    margin:1em 3em;
+    font-size: 16px;
+    color: gray;
+}
+#review{
+    margin-bottom: 1em;
+}
+#customer{
+    font-size: 20px;
+}
+.star_rate{
+    margin:1em 0;
+    font-size: 16px;
+    color: darkorange;
+}
+.date{
+    float: right;
+}
+
+
+@media screen and (max-width:992px){
+    #reviews{
+        width: 100%;
+    }
+    #star_percentage{
+        width: 100%;
+    }
+    .star_percentage_info,#give_review{
+        margin:1em 0em;
+        
+    }
+}
