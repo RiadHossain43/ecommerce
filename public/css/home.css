@@ -1,7 +1,5 @@
 
 body{
-    font-family: 'Baloo Bhaina 2', cursive;
-    font-size: 16px;
     background-image: url('/images/home_back_1.png');
     background-attachment: fixed;
     background-position: center;
@@ -40,98 +38,10 @@ header{
 .list_title h1{
     color: gray;
 }
-#products_container{
-    height: auto;
+.home_products{
     background-color: #EFF1F5;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 1em;
 }
-.product{
-    flex: 1 1 30%;
-    height: auto;
-    margin:1em;
-    box-shadow: 0px 6px 10px gray;
-    border-radius: 4px;
-    overflow: hidden;
-    opacity: 0;
-    cursor: pointer;
-    color: black;
-}
-.product_img{
-    height: 40vh;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image:url('/images/sample_1.jpg');
-}
-/* .product_img:nth-child(1){
-    background-image:url('/images/sample_1.jpg');
-}
-.product_img:nth-child(2){
-    background-image:url('/images/sample_2.png');
-}
-.product_img:nth-child(3){
-    background-image:url('/images/sample_3.png');
-}
-.product_img:nth-child(4){
-    background-image:url('/images/sample_4.png');
-}
-.product_img:nth-child(5){
-    background-image:url('/images/sample_5.png');
-}
-.product_img:nth-child(6){
-    background-image:url('/images/sample_6.jpg');
-}
-.product_img:nth-child(7){
-    background-image:url('/images/sample_7.jpg');
-}
-.product_img:nth-child(8){
-    background-image:url('/images/sample_8.jpg');
-}
-.product_img:nth-child(9){
-    background-image:url('/images/sample_9.png');
-} */
 
-.detail{
-    width: 95%;
-    height: 95%;
-    opacity: 0;
-    background-color: black;
-    transition: .3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.dt{
-    display: block;
-    color: white;
-    border-top: 8px solid white;
-    border-bottom:8px solid white ;
-    padding: 20px 0px;
-    transition: .3s;
-}
-.product:hover .detail{
-    width: 75%;
-    height: 75%;
-    opacity: .6;
-}
-.product:hover .dt{
-    padding: 0px;
-}
-.product_detail_short,.product_footer{
-    padding: 0  2em;
-}
-.product_detail_short p{
-    margin:1em 0;
-    font-family: 'Baloo Bhaina 2', cursive;
-    line-height: 150%;
-}
-.product_detail_short h1{
-    margin-top: 1em;
-    line-height: 130%;
-}
 .add_cart_form{
     display: flex;
     height: 100%;

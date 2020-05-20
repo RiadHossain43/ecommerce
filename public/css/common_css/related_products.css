@@ -1,0 +1,28 @@
+#related_products{
+    padding: 2.5em 4em;
+    text-align: center;
+}
+#related_products_container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: .5em;
+}
+.related_product{
+    flex: 1 1 20%;
+    height: auto;
+    margin:  .5em;
+    box-shadow: 0px 6px 10px gray;
+    border-radius: 4px;
+    overflow: hidden;
+    opacity: 1;
+    cursor: pointer;
+    color: black;
+}
+.related_product:hover .detail{
+    width: 75%;
+    height: 75%;
+    opacity: .6;
+}
+.related_product:hover .dt{
+    padding: 0px;
+}

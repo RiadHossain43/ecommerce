@@ -1,0 +1,26 @@
+<section id="related_products">
+    <h1>People also viewd</h1>
+    <div id="related_products_container">
+        <% for(let i=1; i < 5; i++) { %>
+        <a href="/product/detail" class="related_product">
+            <div class="product_img">
+                <div class="detail">
+                    <h2 class="dt">View</h2>
+                </div>
+            </div>
+            <div class="product_detail_short">
+                <h1>A fancy title of the product</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit.
+                    laudantium nemo ...</p>
+            </div>
+            <div class="product_footer">
+                <form class="add_cart_form" action="">
+                    <h3 class="product_price">Price: 27$</h3>
+                    <button class="add_to_cart_btn">Add to cart</button>
+                </form>
+            </div>
+        </a>
+        <% } %>
+    </div>
+</section>

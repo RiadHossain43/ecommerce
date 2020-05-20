@@ -1,16 +1,18 @@
-<%- include('./includes/head.ejs') %>
+<%- include('./includes/common_view/head.ejs') %>
 
 <link rel="stylesheet" type="text/css" href="/css/home.css">
+<link rel="stylesheet" type="text/css" href="/css/common_css/product_card.css">
+
 </head>
 
 <body>
 
-	<%- include('./includes/loading.ejs') %>
+	<%- include('./includes/common_view/loading.ejs') %>
 
 	<div id="body">
 		
 		<header id="header">
-			<%- include('./includes/navigation.ejs') %>
+			<%- include('./includes/common_view/navigation.ejs') %>
 			<p id="greetings">Welcome to<br>Geek Minds</p>
 		</header>
 
@@ -39,64 +41,67 @@
 		</section>
 
 		<section class="list_title">
-			<h1 class="section_header">Just For YOU</h1>		</section>
-		<section id="products_container">
-			
-			<% for(let i=1; i < 10; i++) { %>
-			<a href="/product/detail" class="product">
-				<div class="product_img">
-					<div class="detail">
-						<h2 class="dt">View</h2>
-					</div>
-				</div>
-				<div class="product_detail_short">
-					<h1>A fancy title of the product</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing
-						elit. Molestias suscipit voluptate facilis autem
-						laudantium nemo ...</p>
-				</div>
-				<div class="product_footer">
-					<form class="add_cart_form" action="">
-						<h3 class="product_price">Price: 27$</h3>
-						<button class="add_to_cart_btn">Add to cart</button>
-					</form>
-				</div>
-			</a>
-			<% } %>
+			<h1 class="section_header">Just For YOU</h1>
+		</section>
+		<section class="home_products">
+			<div class="products_container">
+				<% for(let i=1; i < 10; i++) { %>
+					<a href="/product/detail" class="product">
+						<div class="product_img">
+							<div class="detail">
+								<h2 class="dt">View</h2>
+							</div>
+						</div>
+						<div class="product_detail_short">
+							<h1>A fancy title of the product</h1>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing
+								elit. Molestias suscipit voluptate facilis autem
+								laudantium nemo ...</p>
+						</div>
+						<div class="product_footer">
+							<form class="add_cart_form" action="">
+								<h3 class="product_price">Price: 27$</h3>
+								<button class="add_to_cart_btn">Add to cart</button>
+							</form>
+						</div>
+					</a>
+					<% } %>
+			</div>
 		</section>
 		
 		<section class="load_more">
 			<button class="load_more_btn centralize">Load More</button>
 		</section>
 
-		<%- include('./includes/subscription.ejs') %>
+		<%- include('./includes/common_view/subscription.ejs') %>
 
 		<section class="list_title">
 			<h1 class="section_header">NEW ARRIVALS</h1>
 		</section>
-		<section id="products_container">
-			
-			<% for(let i=1; i < 10; i++) { %>
-			<a href="/product/detail" class="product">
-				<div class="product_img">
-					<div class="detail">
-						<h2 class="dt">View</h2>
-					</div>
-				</div>
-				<div class="product_detail_short">
-					<h1>A fancy title of the product</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing
-						elit. Molestias suscipit voluptate facilis autem
-						laudantium nemo ...</p>
-				</div>
-				<div class="product_footer">
-					<form class="add_cart_form" action="">
-						<h3 class="product_price">Price: 27$</h3>
-						<button class="add_to_cart_btn">Add to cart</button>
-					</form>
-				</div>
-			</a>
-			<% } %>
+		<section class="home_products">
+			<div class="products_container">
+				<% for(let i=1; i < 10; i++) { %>
+					<a href="/product/detail" class="product">
+						<div class="product_img">
+							<div class="detail">
+								<h2 class="dt">View</h2>
+							</div>
+						</div>
+						<div class="product_detail_short">
+							<h1>A fancy title of the product</h1>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing
+								elit. Molestias suscipit voluptate facilis autem
+								laudantium nemo ...</p>
+						</div>
+						<div class="product_footer">
+							<form class="add_cart_form" action="">
+								<h3 class="product_price">Price: 27$</h3>
+								<button class="add_to_cart_btn">Add to cart</button>
+							</form>
+						</div>
+					</a>
+					<% } %>
+			</div>
 		</section>
 		<section class="load_more">
 			<button class="load_more_btn centralize">Load More</button>
@@ -168,11 +173,11 @@
 		</section>
 		<button class="scroll_top"><i class="fas fa-chevron-up"></i></button>
 
-		<%- include('./includes/footer.ejs') %>
+		<%- include('./includes/common_view/footer.ejs') %>
 
 	</div>
 
 
 	<script type="module" src="/scripts/home.js"></script>
 
-	<% -include('./includes/end.ejs') %>
+	<% -include('./includes/common_view/end.ejs') %>

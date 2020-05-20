@@ -1,12 +1,14 @@
-<%- include('./includes/head.ejs') %>
+<%- include('./includes/common_view/head.ejs') %>
     <link rel="stylesheet" type="text/css" href="/css/product_detail.css">
-    <link rel="stylesheet" type="text/css" href="/css/review.css">
+    <link rel="stylesheet" type="text/css" href="/css/product_detail_sub/review.css">
+    <link rel="stylesheet" type="text/css" href="/css/common_css/related_products.css">
+
 </head>
 
 <body>
 
     <header id="header">
-        <%- include('./includes/navigation.ejs') %>
+        <%- include('./includes/common_view/navigation.ejs') %>
         <div id="head_add">this is the haed add</div>
     </header>
 
@@ -69,13 +71,14 @@
                         eum nulla ipsam similique vel veniam aliquid 
                     </p>
                 <% } %> -->
-                <%- include('./includes/review.ejs') %>
+                <%- include('./includes/product_detail_subview/review.ejs') %>
             </div>
         </div>
     </section>
 
-    <%- include('./includes/footer.ejs') %>
+    <%- include('./includes/common_view/related_products.ejs') %>
+    <%- include('./includes/common_view/footer.ejs') %>
 
     <script type="module" src="/scripts/product_detail.js"></script>
 
-    <% -include('./includes/end.ejs') %>
+    <% -include('./includes/common_view/end.ejs') %>

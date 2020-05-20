@@ -1,0 +1,227 @@
+<%- include('./includes/common_view/head.ejs') %>
+
+<link rel="stylesheet" type="text/css" href="/css/shop.css">
+<link rel="stylesheet" type="text/css" href="/css/common_css/product_card.css">
+
+</head>
+
+<body>
+
+	<header id="header">
+		<%- include('./includes/common_view/navigation.ejs') %>
+		<div  id="top_adds"><div id="top_adds_img_slider">
+			<img src="/images/home_back_3.jpg" alt="" class="centralize">
+		</div>
+		<ul class="shop_links">
+			<li class="shop_link"><a href="">NEW ARRIVALS</a></li>
+			<li class="shop_link"><a href="">BEST SELLERS</a></li>
+			<li class="shop_link"><a href="">EXTENDED WIDTH</a></li>
+			<li class="shop_link"><a href="">SALE</a></li>
+			<li class="shop_link"><a href="">MORE</a></li>
+		</ul></div>
+	</header>
+
+
+	<section class="section_title">
+		<h1>Catagories</h1>
+	</section>
+	<section id="catagories">
+		<h1>Catagories</h1>
+		<ul class="catagory">
+			<h1>catagory name</h1>
+			<li class="sub_catagory">sub</li>
+			<li class="sub_catagory">sub</li>
+			<li class="sub_catagory">sub</li>
+			<li class="sub_catagory">sub</li>
+		</ul>
+		<ul class="catagory">
+			<h1>catagory name</h1>
+			<li class="sub_catagory">sub</li>
+			<li class="sub_catagory">sub</li>
+			<li class="sub_catagory">sub</li>
+			<li class="sub_catagory">sub</li>
+		</ul>
+		<ul class="catagory">
+			<h1>catagory name</h1>
+			<li class="sub_catagory">sub</li>
+			<li class="sub_catagory">sub</li>
+			<li class="sub_catagory">sub</li>
+			<li class="sub_catagory">sub</li>
+		</ul>
+		<ul class="catagory">
+			<h1>catagory name</h1>
+			<li class="sub_catagory">sub</li>
+			<li class="sub_catagory">sub</li>
+			<li class="sub_catagory">sub</li>
+			<li class="sub_catagory">sub</li>
+		</ul>
+	</section>
+
+	<section id="main_shop">
+		<div id="filters">
+			<div class="filter_types">
+				<ul class="filter_type">
+					<h3>Brand</h3>
+					<li class="filter_option"><a href="">option one</a></li>
+					<li class="filter_option"><a href="">option one</a></li>
+					<li class="filter_option"><a href="">option one</a></li>
+					<li class="filter_option"><a href="">option one</a></li>
+				</ul>
+			</div>
+			<div class="filter_types">
+				<form action="" id="price_fiter_form" class="filter_type">
+					<h3>Price</h1>
+						<input type="text" name="min_price" id="min_price" placeholder="Minimum">
+						<input type="text" name="max_price" id="max_price" placeholder="Maximum">
+						<button id="price_submit_btn"><i class="fas fa-caret-right"></i></button>
+				</form>
+			</div>
+			<div class="filter_types">
+				<ul class="filter_type">
+					<h3>Rating</h3>
+					<li class="filter_option"><a href="">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</a></li>
+					<li class="filter_option"><a href="">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="far fa-star"></i>
+						</a>And up</li>
+					<li class="filter_option"><a href="">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star-half-alt"></i>
+							<i class="far fa-star"></i>
+						</a>And up</li>
+					<li class="filter_option"><a href="">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="far fa-star"></i>
+							<i class="far fa-star"></i>
+						</a>And up</li>
+					<li class="filter_option"><a href="">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="far fa-star"></i>
+							<i class="far fa-star"></i>
+							<i class="far fa-star"></i>
+						</a>And up</li>
+				</ul>
+			</div>
+			<div class="filter_types">
+				<ul class="filter_type">
+					<h3>Brand</h3>
+					<li class="filter_option"><a href="">option one</a></li>
+					<li class="filter_option"><a href="">option one</a></li>
+					<li class="filter_option"><a href="">option one</a></li>
+					<li class="filter_option"><a href="">option one</a></li>
+				</ul>
+			</div>
+			<div class="filter_types">
+				<ul class="filter_type">
+					<h3>Brand</h3>
+					<li class="filter_option"><a href="">option one</a></li>
+					<li class="filter_option"><a href="">option one</a></li>
+					<li class="filter_option"><a href="">option one</a></li>
+					<li class="filter_option"><a href="">option one</a></li>
+				</ul>
+			</div>
+			<div class="filter_types">
+				<ul class="filter_type">
+					<h3>Brand</h3>
+					<li class="filter_option"><a href="">option one</a></li>
+					<li class="filter_option"><a href="">option one</a></li>
+					<li class="filter_option"><a href="">option one</a></li>
+					<li class="filter_option"><a href="">option one</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="products_container" id="shop_products_container">
+			<% for(let i=1; i < 10; i++) { %>
+			<a href="/product/detail" class="product">
+				<div class="product_img">
+					<div class="detail">
+						<h2 class="dt">View</h2>
+					</div>
+				</div>
+				<div class="product_detail_short">
+					<h1>A fancy title of the product</h1>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing
+						elit.
+						laudantium nemo ...</p>
+				</div>
+				<div class="product_footer">
+					<form class="add_cart_form" action="">
+						<h3 class="product_price">Price: 27$</h3>
+						<button class="add_to_cart_btn">Add to cart</button>
+					</form>
+				</div>
+			</a>
+			<% } %>
+		</div>
+	</section>
+
+	<section id="sale">
+		<div id="sale_detail">
+			<h3 id="sale_head_sub">Special promo</h3>
+			<h1 id="sale_head_main">Summer Sale</h1>
+			<p id="sale_about">Lorem ipsum dolor sit amet consectetur
+				adipisicing elit. Officiis, eum aliquam nemo iusto fuga
+				corrupti quis? Esse exercitationem minus delectus,
+				doloremque rem corporis eius nisi recusandae eos unde?
+				Accusamus, praesentium?</p>
+		</div>
+		<div id="sale_deadline">
+			<div class="sale_dead_time">
+				<h1 id="reamin_week">20</h1>
+				<h1>weeks</h1>
+			</div>
+			<div class="sale_dead_time">
+				<h1 id="reamin_days">2</h1>
+				<h1>days</h1>
+			</div>
+			<div class="sale_dead_time">
+				<h1 id="reamin_hr" >14</h1>
+				<h1>hours</h1>
+			</div>
+			<div class="sale_dead_time">
+				<h1 id="reamin_min">20</h1>
+				<h1>minutes</h1>
+			</div>
+			<div class="sale_dead_time">
+				<h1 id="reamin_sec">10</h1>
+				<h1>seconds</h1>
+			</div>
+		</div>
+	</section>
+	<section id="promotions">
+		<h1>Popular Views by customers</h1>
+		<div id="promotions_container">
+			<% for(let i=1; i < 5; i++) { %>
+			<a href="/product/detail" class="promote">
+				<div class="promo_img">
+					<div class="promo_detail">
+						<h2 class="promo_dt">New Arivals</h2>
+					</div>
+				</div>
+			</a>
+			<% } %>
+		</div>
+	</section>
+	
+
+	<%- include('./includes/common_view/footer.ejs') %>
+
+
+
+	<script type="module" src="/scripts/shop.js"></script>
+
+	<% -include('./includes/common_view/end.ejs') %></div>
