@@ -41,20 +41,6 @@ header{
 .home_products{
     background-color: #EFF1F5;
 }
-
-.add_cart_form{
-    display: flex;
-    height: 100%;
-    justify-content: space-between;
-}
-.add_to_cart_btn{
-    padding: 1em;
-    outline: none;
-    border: 3px solid black;
-}
-.add_to_cart_btn,.product_price{
-   margin: auto 0;
-}
 #featured_products{
     display: flex;
     flex-wrap: wrap;
@@ -119,13 +105,7 @@ header{
     position: relative;
     z-index: 1;
 }
-.product_footer{
-    font-size: 20px;
-    color: gray;
-    line-height: 150%;
-    margin-bottom: 1em;
-    padding: 0 1.5em;
-}
+
 .load_more{
     position: relative;
     height: 20vh;

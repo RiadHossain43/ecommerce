@@ -50,6 +50,9 @@
 .product_detail_short,.product_footer{
     padding: 0  1em;
 }
+.product_footer{
+    margin-bottom: 1em;
+}
 .product_detail_short h1{
     margin-top: 1em;
     line-height: 130%;
@@ -58,7 +61,6 @@
 }
 .product_detail_short p{
     margin:1em 0;
- 
     line-height: 130%;
     font-size: 16px;
 }

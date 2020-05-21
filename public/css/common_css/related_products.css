@@ -1,5 +1,7 @@
 #related_products{
     padding: 2.5em 4em;
+}
+#related_products h1{
     text-align: center;
 }
 #related_products_container{
@@ -25,4 +27,17 @@
 }
 .related_product:hover .dt{
     padding: 0px;
+}
+@media screen and (max-width:992px){
+    .product{
+        flex: 1 1 35%;
+    }
+}
+@media screen and (max-width:768px){
+    #related_products{
+        padding: 1.5em .5em;
+    }
+    .related_product{
+        flex: 1 1 100%;
+    }
 }

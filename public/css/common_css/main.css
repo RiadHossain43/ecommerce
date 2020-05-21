@@ -67,3 +67,36 @@ a{
     text-decoration: none;
 }
 
+/* scrollbar */
+
+::-webkit-scrollbar{
+	width: 5px;
+}
+::-webkit-scrollbar-track
+{
+	background-color: transparent;
+}
+::-webkit-scrollbar-thumb
+{
+	background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb:hover
+{
+	background-color: #555;
+}
+
+::-moz-scrollbar{
+	width: 5px;
+}
+::-moz-scrollbar-track
+{
+	background-color: transparent;
+}
+::-moz-scrollbar-thumb
+{
+	background-color: #f1f1f1;
+}
+::-moz-scrollbar-thumb:hover
+{
+	background-color: #555;
+}

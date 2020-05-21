@@ -1,5 +1,8 @@
 #reviews{
     width: 60%;
+    height: 80vh;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 #review_amount{
     margin:.5em 0;
@@ -47,3 +50,6 @@
         
     }
 }
+
+
+
