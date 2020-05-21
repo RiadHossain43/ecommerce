@@ -9,16 +9,18 @@
 
 	<header id="header">
 		<%- include('./includes/common_view/navigation.ejs') %>
-		<div  id="top_adds"><div id="top_adds_img_slider">
-			<img src="/images/home_back_3.jpg" alt="" class="centralize">
+		<div id="top_adds">
+			<div id="top_adds_img_slider">
+				<img src="/images/home_back_3.jpg" alt="" class="centralize">
+			</div>
+			<ul class="shop_links">
+				<li class="shop_link"><a href="">NEW ARRIVALS</a></li>
+				<li class="shop_link"><a href="">BEST SELLERS</a></li>
+				<li class="shop_link"><a href="">EXTENDED WIDTH</a></li>
+				<li class="shop_link"><a href="">SALE</a></li>
+				<li class="shop_link"><a href="">MORE</a></li>
+			</ul>
 		</div>
-		<ul class="shop_links">
-			<li class="shop_link"><a href="">NEW ARRIVALS</a></li>
-			<li class="shop_link"><a href="">BEST SELLERS</a></li>
-			<li class="shop_link"><a href="">EXTENDED WIDTH</a></li>
-			<li class="shop_link"><a href="">SALE</a></li>
-			<li class="shop_link"><a href="">MORE</a></li>
-		</ul></div>
 	</header>
 
 
@@ -63,13 +65,13 @@
 				<li>sub</li>
 			</ul>
 		</div>
-		
+
 	</section>
 
 	<section id="main_shop">
 		<div id="filter_sec">
 			<div class="filter_sec_title">
-					<h4 id="filter_menu">Filter your needs <i class="fas fa-filter"></i></h4>
+				<h4 id="filter_menu">Filter your needs <i class="fas fa-filter"></i></h4>
 			</div>
 			<div class="activate_mobile_filter_view">
 				<div>
@@ -206,7 +208,7 @@
 				<h1>days</h1>
 			</div>
 			<div class="sale_dead_time">
-				<h1 id="reamin_hr" >14</h1>
+				<h1 id="reamin_hr">14</h1>
 				<h1>hours</h1>
 			</div>
 			<div class="sale_dead_time">
@@ -233,12 +235,14 @@
 			<% } %>
 		</div>
 	</section>
-	
+
 
 	<%- include('./includes/common_view/footer.ejs') %>
 
 
 
 	<script type="module" src="/scripts/shop.js"></script>
+	<script type="module" src="/scripts/countdown.js"></script>
+
 
 	<% -include('./includes/common_view/end.ejs') %></div>

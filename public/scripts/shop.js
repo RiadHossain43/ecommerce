@@ -35,6 +35,18 @@ let habdle_filter_bar = () => {
         
     }
 }
+
+let handle_top_adds_img_slider = ()=>{
+    let img_path = ['/images/home_back_3.jpg','/images/home_back_4.jpg']
+    let top_adds_img_slider = util.eleID('top_adds_img_slider')
+    let it = 1
+    setInterval(()=>{
+        if(it>1) it = 0;
+        top_adds_img_slider.innerHTML = ` <img src="${img_path[it]}" alt="" class="centralize"> `
+        it++
+    },5000)
+}
+
 window.addEventListener('scroll', () => {
     prod.prod_sec_Anim()
     navigation.animate();
@@ -43,3 +55,4 @@ window.addEventListener('scroll', () => {
 navigation.handleMenu()
 handler_catagory_bar()
 habdle_filter_bar()
+handle_top_adds_img_slider()

@@ -1,6 +1,4 @@
-body{
-   
-}
+
 section{
     background-color: white;
 }
@@ -22,15 +20,12 @@ section{
 }
 .shop_links{
     display: flex;
-    justify-content: center;
-    /* background-color:navajowhite; */
-    
+    justify-content: center;    
 }
 .shop_link{
     margin: .2em 1em;
     padding: .5em;
     line-height: 100%;
-    
     border: 1px solid gray;
 }
 .shop_links a{
@@ -223,6 +218,7 @@ section{
     }
     .shop_links{
         overflow-x: scroll;
+        justify-content: start;
     }
     #main_shop{
        flex-direction: column;
@@ -303,5 +299,15 @@ section{
     }
     .promo_img{
         height: 30vh;
+    }
+    #reamin_week,
+    #reamin_days,
+    #reamin_hr,
+    #reamin_min,
+    #reamin_sec{
+       font-size: 2em;
+    }
+    .sale_dead_time{
+        padding:1em;
     }
 }
