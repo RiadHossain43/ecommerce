@@ -11,7 +11,7 @@ let scroll_top_event = ()=>{
     let scroll_btn = eleCls('scroll_top');
     const minimum_scroll = 5000;
 
-    if(window.scrollY > minimum_scroll) set_style(scroll_btn[0],{zIndex:1,opacity:.4});
+    if(window.scrollY > minimum_scroll) set_style(scroll_btn[0],{zIndex:1,opacity:1});
     else set_style(scroll_btn[0],{zIndex:-1,opacity:0});
 
     scroll_btn[0].addEventListener('click',()=>{

@@ -1,7 +1,7 @@
-import * as util from './util.js'
-import * as navigation from './navigation.js'
-import * as subscribe from './subscription.js'
-import * as prod from './product_anim.js'
+import * as util from './common_scripts/util.js'
+import * as navigation from './common_scripts/navigation.js'
+import * as subscribe from './common_scripts/subscription.js'
+import * as prod from './common_scripts/product_anim.js'
 
 
 // Handle loading animation here of the page if want...

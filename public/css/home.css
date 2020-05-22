@@ -1,4 +1,3 @@
-
 body{
     background-image: url('/images/home_back_1.png');
     background-attachment: fixed;
@@ -114,18 +113,16 @@ header{
 }
 .load_more_btn{
     padding: 1em;
+    background-color: transparent;
+    border: 2px solid black;
+    transition: .5s;
+    border-radius: 5px;
 }
-.scroll_top{
-    position: fixed;
-    top: 90%;
-    left: 90%;
-    padding: .5em  1em;
-    opacity: 0;
-    transition: 1s;
-    z-index: -1;
+.load_more_btn:hover{
     background-color: black;
     color: white;
 }
+
 
 /*    home_utility   */
 

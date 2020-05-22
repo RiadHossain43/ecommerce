@@ -29,7 +29,7 @@ let handleMenu = () => {
         util.set_style(menu, { clipPath: "circle(2200px at 100% 0%)" });
         let animDelay = .3;
         for (var i = 0; i < link.length; i++) {
-            util.set_style(link[i], { opacity: 1, animation: `bounce-top 0.9s both ${animDelay}s` });
+            util.set_style(link[i], { opacity: 1, animation: `slide-right 0.9s both ${animDelay}s` });
             animDelay += .3;
         }
     });

@@ -1,6 +1,6 @@
-import * as navigation from './navigation.js'
-import * as util from './util.js'
-import * as prod from './product_anim.js'
+import * as navigation from './common_scripts/navigation.js'
+import * as util from './common_scripts/util.js'
+import * as prod from './common_scripts/product_anim.js'
 
 let handler_catagory_bar = () => {
     let catagory_menu = util.eleID('catagory_menu')
@@ -24,35 +24,48 @@ let habdle_filter_bar = () => {
     let filter_mob_view = util.eleCls('activate_mobile_filter_view')
     let filter_menu = util.eleID('filter_menu')
     let hide_filter_bar = util.eleID('hide_filter_bar')
-    
+
     if (window.innerWidth < 992) {
         filter_menu.addEventListener('click', () => {
             filter_mob_view[0].classList.add('filter_view_slide_inout')
         })
-        hide_filter_bar.addEventListener('click',()=>{
+        hide_filter_bar.addEventListener('click', () => {
             filter_mob_view[0].classList.remove('filter_view_slide_inout')
         })
-        
+
     }
 }
 
-let handle_top_adds_img_slider = ()=>{
-    let img_path = ['/images/home_back_3.jpg','/images/home_back_4.jpg']
-    let top_adds_img_slider = util.eleID('top_adds_img_slider')
-    let it = 1
-    setInterval(()=>{
-        if(it>1) it = 0;
-        top_adds_img_slider.innerHTML = ` <img src="${img_path[it]}" alt="" class="centralize"> `
-        it++
-    },5000)
+let handle_top_adds_img_slider = () => {
+    
+    let top_adds_img = util.eleCls('top_add_img')
+    let greet = util.eleCls('greet')
+    setInterval(() => {
+        for (let i = 0; i < top_adds_img.length; i++) {
+            top_adds_img[i].classList.toggle('_hide')
+            greet[i].classList.toggle('_hide')
+        }
+    }, 5000)
 }
-
+let promotion_mobile_view = () => {
+    let promote = util.eleCls('promote')
+    let promo_dt = util.eleCls('promo_dt')
+    let promo_detail = util.eleCls('promo_detail')
+    for (let i = 0; i < promote.length; i++) {
+        if (window.innerWidth <= 768) {
+            util.set_style(promo_detail[i], { width: '75%', height: '75%', opacity: '.6', border: '3px solid orange' });
+            util.set_style(promo_dt[i], { padding: '0px' });
+        }
+    }
+}
 window.addEventListener('scroll', () => {
     prod.prod_sec_Anim()
-    navigation.animate();
+    util.scroll_top_event()
+    navigation.animate()
 });
 
 navigation.handleMenu()
 handler_catagory_bar()
 habdle_filter_bar()
 handle_top_adds_img_slider()
+promotion_mobile_view()

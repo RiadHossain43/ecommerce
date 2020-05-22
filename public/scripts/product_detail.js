@@ -1,5 +1,5 @@
-import * as navigation from './navigation.js'
-import * as util from './util.js'
+import * as navigation from './common_scripts/navigation.js'
+import * as util from './common_scripts/util.js'
 
 const amount = util.eleID('amount')
 

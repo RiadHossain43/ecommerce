@@ -1,4 +1,4 @@
-import * as util from './util.js'
+import * as util from '../common_scripts/util.js'
 
 setInterval(() => {
 
@@ -20,7 +20,6 @@ setInterval(() => {
     }
     const days_of_month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
-    // Utility Functions.....
     let updateDigital = () => {
         hour = 24 - hour
         minute = 60 - minute
@@ -45,13 +44,7 @@ setInterval(() => {
         sec_left.innerText = sec
         days_left.innerText = day
         weeks_left.innerText = week
-
-        // console.log(hour+':'+minute+':'+sec)
-        // d_time.innerHTML = hour + ':' + minute + ':' + sec;
-
     }
-
-
 
     //Updating the clocks...
     updateDigital();

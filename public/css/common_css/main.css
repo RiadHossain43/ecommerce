@@ -6,6 +6,25 @@ body{
     font-family: 'Baloo Bhaina 2', cursive;  
     font-size: 18px;
 }
+.greet{
+    color: white;
+    font-size: 3.5em;
+    text-align: center;
+    line-height: 100%;
+    opacity: 1;
+    transition: 1s;
+}
+.scrolldown{
+    color: white;
+    font-size: 3.5em;
+    text-align: center;
+    line-height: 100%;
+    position:absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    animation: scroll_down_icon 1s ease infinite;
+}
 #loader{
     position: absolute;
     width: 100%;
@@ -60,6 +79,17 @@ a:hover{
     left: 50%;
     transform: translate(-50%,-50%);
 }
+.scroll_top{
+    position: fixed;
+    top: 90%;
+    left: 90%;
+    padding: .5em  1em;
+    opacity: 0;
+    transition: 1s;
+    z-index: -1;
+    background-color: black;
+    color: white;
+}
 ul{
     list-style: none;
 }
@@ -99,4 +129,15 @@ a{
 ::-moz-scrollbar-thumb:hover
 {
 	background-color: #555;
+}
+@media screen and (max-width:992px){
+    .greet{
+        font-size: 2em;
+    }
+}
+@media screen and (max-width:768px){
+    .greet{
+        font-size: 2em;
+        width: 90%;
+    }
 }

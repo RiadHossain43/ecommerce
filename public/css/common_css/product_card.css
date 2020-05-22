@@ -74,6 +74,13 @@
     padding: 1em;
     outline: none;
     border: 3px solid black;
+    border-radius: 5px;
+    background: transparent;
+    transition: .4s;
+}
+.add_to_cart_btn:hover{
+    color: white;
+    background-color: black;
 }
 .add_to_cart_btn,.product_price{
    margin: auto 0;

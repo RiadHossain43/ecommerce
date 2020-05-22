@@ -1,5 +1,8 @@
-#company_info,nav,#menu{
+#company_info,nav{
     z-index: 2;
+}
+#menu{
+    z-index: 3;
 }
 
 #company_info{
