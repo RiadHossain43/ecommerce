@@ -1,0 +1,88 @@
+#header{
+    background-color:darkorange;
+}
+section{
+    padding:1em 4em;
+}
+#cart_form_main{
+    width: 100%;
+}
+.help_bts{
+    display: flex;
+}
+#update_cart_btn,#continue_shoping_btn{
+    margin:2em .4em;
+    padding: 1em 2em;
+    font-size: 18px;
+    border-radius: 5px;
+}
+#update_cart_btn{
+    color: white;
+    background-color: black;
+}
+#continue_shoping_btn{
+    color: black;
+    border: 1px solid black;
+    display: block;
+}
+#complet_purchase{
+    display: flex;
+    flex-wrap: wrap;
+}
+#cuppon_form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding:0 1em;
+}
+#cuppon_form input,#cuppon_form button{
+    padding: 1em ;
+    border-radius: 5px;
+    border:1px solid black;
+    width:auto;
+    margin: 3px 0;
+}
+#purchase_detail_fianl{
+    width: 30%;
+    margin: 0 auto;
+    padding: 8px;
+    border:1px solid black;
+}
+
+#check_out_btn{
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 1em;
+    text-align: center;
+    line-height: 100%;   
+    display: block;
+}
+.cart_money{
+    display: flex;
+    justify-content: space-around;
+    margin: 3px 0;
+    border-bottom: 1px solid gray;
+}
+@media screen and (max-width:992px){
+   section{
+       padding: 1em ;
+   }
+   #main_cart{
+      overflow-x: scroll;
+    }
+    #cuppon_form{
+        width: 100%;
+    }
+    #purchase_detail_fianl{
+        width: 100%;
+        margin-top: 1em;
+    }
+    #update_cart_btn,#continue_shoping_btn{
+        margin:10px;
+        padding: 1em;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+    
+}

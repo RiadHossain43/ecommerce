@@ -1,8 +1,8 @@
 <%- include('./includes/common_view/head.ejs') %>
-    <link rel="stylesheet" type="text/css" href="/css/product_detail.css">
-    <link rel="stylesheet" type="text/css" href="/css/product_detail_sub/review.css">
-    <link rel="stylesheet" type="text/css" href="/css/common_css/related_products.css">
-    <link rel="stylesheet" type="text/css" href="/css/common_css/product_card.css">
+<link rel="stylesheet" type="text/css" href="/css/product_detail.css">
+<link rel="stylesheet" type="text/css" href="/css/product_detail_sub/review.css">
+<link rel="stylesheet" type="text/css" href="/css/common_css/related_products.css">
+<link rel="stylesheet" type="text/css" href="/css/common_css/product_card.css">
 
 </head>
 
@@ -10,7 +10,7 @@
 
     <header id="header">
         <%- include('./includes/common_view/navigation.ejs') %>
-        <div id="head_add">this is the haed add</div>
+        <div class="head_add">this is the haed add</div>
     </header>
 
     <section id="product_overview">
@@ -56,23 +56,21 @@
         </div>
         <div id="full_detail">
             <ul id="detail_links">
-               <li  class="detail_link"><a href="">Description</a></li>
-               <li  class="detail_link"><a href="">Manufacturer</a></li> 
-               <li  class="detail_link"><a href="">Review</a></li>  
+                <li><button class="detail_link">Description</button></li>
+                <li><button class="detail_link">Manufacturer</button></li>
+                <li><button class="detail_link">Review</button></li>
             </ul>
             <div id="detail_display_box">
-                <!-- <% for(let i=1; i < 6; i++) { %>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit. Quam consectetur dolor autem sapiente quod, 
-                        eum nulla ipsam similique vel veniam aliquid 
-                        optio dolores illo asperiores eaque aut velit magnam vero.
-                        Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit. Quam consectetur dolor autem sapiente quod, 
-                        eum nulla ipsam similique vel veniam aliquid 
-                    </p>
-                <% } %> -->
-                <%- include('./includes/product_detail_subview/review.ejs') %>
+                <!----order matters here----->
+                <div class="all_prod_info_container activate">
+                    <%- include('./includes/product_detail_subview/description.ejs') %>
+                </div>
+                <div class="all_prod_info_container">
+                    <%- include('./includes/product_detail_subview/features.ejs') %>
+                </div>
+                <div class="all_prod_info_container">
+                    <%- include('./includes/product_detail_subview/review.ejs') %>
+                </div>
             </div>
         </div>
     </section>

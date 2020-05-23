@@ -6,6 +6,12 @@ body{
     font-family: 'Baloo Bhaina 2', cursive;  
     font-size: 18px;
 }
+.head_add{
+    color: white;
+    text-align: center;
+    padding: 2em;
+    line-height: 130%;
+}
 .greet{
     color: white;
     font-size: 3.5em;

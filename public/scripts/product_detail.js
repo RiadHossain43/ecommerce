@@ -20,10 +20,25 @@ let handle_form = ()=>{
     
 }
 
+let handle_descriptuon = ()=>{
+    let detail_link = util.eleCls('detail_link')
+    let all_prod_info_container = util.eleCls('all_prod_info_container')
+    for(let i = 0;i<detail_link.length;i++ ){
+        detail_link[i].addEventListener('click',(e)=>{
+            for(let i =0;i<detail_link.length;i++){
+                if(e.target===detail_link[i])
+                    all_prod_info_container[i].classList.add('activate')
+                else all_prod_info_container[i].classList.remove('activate')
+            }
+        })
+    }
+}
+
 window.addEventListener('scroll', () => {
     navigation.animate();
 });
 
 // function calls 
 handle_form()
+handle_descriptuon()
 navigation.handleMenu()

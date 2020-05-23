@@ -1,13 +1,7 @@
-
 #header{
     background-color:darkorange;
 }
-#head_add{
-    color: white;
-    text-align: center;
-    padding: 2em;
-    line-height: 130%;
-}
+
 #product_overview{
     display: flex;
     padding: 0 4em;
@@ -108,11 +102,19 @@
     cursor: pointer;
 }
 #detail_display_box{
+    /* position: absolute; */
     border: 1px solid black;
     padding: 1.5em;
     text-align: justify;
     display: flex;
     flex-wrap: wrap;
+}
+.all_prod_info_container{
+    display: none;
+    flex-wrap: wrap;
+}
+.activate{
+    display: flex;
 }
 
 /*  helper class*/
