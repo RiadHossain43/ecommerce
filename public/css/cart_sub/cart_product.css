@@ -6,12 +6,13 @@
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     transition: 1s;
-    
     overflow: hidden;
+    max-height: 40vh;
 }
-
 .remove_prod_anim{
     opacity:0;
+    max-height:0;
+    margin-top:0em;
 }
 .amount_display,.product,.price,.total{
     display: flex;

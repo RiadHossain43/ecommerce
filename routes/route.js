@@ -15,5 +15,8 @@ router.get('/shop',(req,res)=>{
 router.get('/cart',(req,res)=>{
     res.render('cart')
 })
+router.get('/checkout',(req,res)=>{
+    res.render('checkout')
+})
 
 module.exports = router
