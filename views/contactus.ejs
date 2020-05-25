@@ -1,0 +1,52 @@
+<%- include('./includes/common_view/head.ejs') %>
+
+<link rel="stylesheet" type="text/css" href="/css/contactus.css">
+
+
+</head>
+
+<body>
+
+    <header id="header">
+        <%- include('./includes/common_view/navigation.ejs') %>
+        <div class="head_add">this is the haed add</div>
+    </header>
+
+    <section>
+        <h1 style="text-align: center;">Contact Us</h1>
+        <form action="" id="contact_form">
+            <div id="send_msg">
+                <div class="half_width field"><input class="input" type="text" name="name" id="country" placeholder="country"></div>
+                <div class="half_width field"><input class="input" type="text" name="phone" id="first_name" placeholder="first_name"></div>
+                <div class="full_width field"><input class="input" type="text" name="email" id="last_name" placeholder="last_name"></div>
+                <div class="full_width field"><input class="input" type="text" name="subject" id="company" placeholder="company"></div>
+                <div class="full_width field"><textarea name="msg" id="about_product" placeholder="about_product"></textarea></div>
+                <div class="full_width field"><button class="submit_btn">submut</button>
+                </div>
+            </div>
+            <div id="contact_info">
+                <div class="contact_typ">
+                    <p>phonne</p>
+                    <p>+321354154</p>
+                    <p>+321354154</p>
+                </div>
+                <div class="contact_typ">
+                    <p>email</p>
+                    <p>info@info.com</p>
+                    <p>comapny@company.com</p>
+                </div>
+                <div class="contact_typ">
+                    <p>Main Office</p>
+                    <p>adddress 123/4 road 3 block</p>
+                    <p>city postal code contry</p>
+                </div>
+            </div>
+        </form>
+    </section>
+
+
+    <%- include('./includes/common_view/footer.ejs') %>
+
+    <script type="module" src="/scripts/contactus.js"></script>
+
+    <% -include('./includes/common_view/end.ejs') %>

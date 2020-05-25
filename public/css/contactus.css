@@ -1,0 +1,91 @@
+#header{
+    background-color: darkorange;
+}
+section{
+    padding: 1em 4em;
+}
+#contact_form{
+    display: flex;
+    flex-wrap: wrap;
+}
+#send_msg{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: darkturquoise; */
+}
+#contact_info{
+    box-sizing: border-box;
+    width: 40%;
+    padding: 1em 2em;
+    /* background-color: fuchsia; */
+}
+.full_width{
+    width: 95%;
+    margin: .4em auto; 
+}
+.half_width{
+    width: 45%;
+    margin: .4em auto;
+}
+.field{
+    opacity: 0;
+}
+.input{
+    box-sizing: border-box;
+    display: block;
+    border-radius: 4px;
+    border: 1px solid #00838F;
+    height: 8vh;
+    font-size: 18px;
+    padding:1em;
+    width: 100%;
+}
+textarea{
+    box-sizing: border-box;
+    height: 30vh;
+    resize: vertical;
+    padding:1em;
+    width: 100%;
+    border: 1px solid #00838F;
+    border-radius: 4px;
+    font-size: 18px;
+}
+.submit_btn{
+    padding: 1em;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.contact_typ{
+    line-height: 130%;
+    margin: 4em 0;
+    border-left: 3px solid black;
+    padding-left: 10px;
+    opacity: 0;
+}
+
+@media screen and (max-width:992px){
+    #contact_form{
+        flex-direction:column-reverse;
+    }
+    #send_msg, #contact_info{
+        width:100%;
+    }
+    .contact_typ{
+        margin: 1em 0;
+    }
+}
+@media screen and (max-width:768px){
+    section{
+        padding: 1em ;
+    }
+    .full_width{
+        width: 98%;
+    }
+    .half_width{
+        width: 48%;
+    }
+    #contact_info{
+        padding: .5em 1em;
+    }
+ }

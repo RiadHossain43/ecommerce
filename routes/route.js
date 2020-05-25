@@ -18,5 +18,8 @@ router.get('/cart',(req,res)=>{
 router.get('/checkout',(req,res)=>{
     res.render('checkout')
 })
+router.get('/contact',(req,res)=>{
+    res.render('contactus')
+})
 
 module.exports = router
