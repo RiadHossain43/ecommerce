@@ -4,6 +4,15 @@ import * as util from './common_scripts/util.js'
 const amount = util.eleCls('amount')
 const remove_prod = util.eleCls('remove_prod')
 
+util.on_page_loaded(()=>{
+    let cart_product_view = util.eleCls('cart_product_view')
+    let animdelay = 1
+    for(let i=0;i<cart_product_view.length;i++){
+        setTimeout(() => {
+            util.set_style(cart_product_view[i], { animation: 'fadeInUp 1s ease', opacity: 1 })
+        }, (++animdelay) * 300)
+    }
+})
 
 let handle_quantity = ()=>{
     const amount_increase = util.eleCls('amount_increase')
@@ -34,6 +43,7 @@ let remove_handler =()=>{
 window.addEventListener('scroll', () => {
     navigation.animate();
 });
+
 
 navigation.handleMenu()
 handle_quantity()

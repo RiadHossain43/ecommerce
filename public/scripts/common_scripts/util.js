@@ -9,7 +9,7 @@ let set_style = (elem, styles) => {
 }
 let scroll_top_event = ()=>{
     let scroll_btn = eleCls('scroll_top');
-    const minimum_scroll = 5000;
+    const minimum_scroll = 2500;
 
     if(window.scrollY > minimum_scroll) set_style(scroll_btn[0],{zIndex:1,opacity:1});
     else set_style(scroll_btn[0],{zIndex:-1,opacity:0});
@@ -22,6 +22,9 @@ let scroll_top_event = ()=>{
         });
     });
 }
+let on_page_loaded = (cb)=>{
+    return window.addEventListener(('load'),cb)
+}
 export{
-    eleID,eleCls,set_style,scroll_top_event
+    eleID,eleCls,set_style,scroll_top_event,on_page_loaded
 }

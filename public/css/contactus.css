@@ -1,5 +1,9 @@
+:root{
+    --input-border-color:#4F4F4F;
+    --input-focus-color:black;
+}
 #header{
-    background-color: darkorange;
+    background-color: #383838;
 }
 section{
     padding: 1em 4em;
@@ -12,13 +16,11 @@ section{
     width: 60%;
     display: flex;
     flex-wrap: wrap;
-    /* background-color: darkturquoise; */
 }
 #contact_info{
     box-sizing: border-box;
     width: 40%;
     padding: 1em 2em;
-    /* background-color: fuchsia; */
 }
 .full_width{
     width: 95%;
@@ -35,11 +37,14 @@ section{
     box-sizing: border-box;
     display: block;
     border-radius: 4px;
-    border: 1px solid #00838F;
+    border: 1px solid var(--input-border-color);
     height: 8vh;
     font-size: 18px;
     padding:1em;
     width: 100%;
+}
+.input:focus{
+    border: 2px solid var(--input-focus-color);
 }
 textarea{
     box-sizing: border-box;
@@ -47,26 +52,35 @@ textarea{
     resize: vertical;
     padding:1em;
     width: 100%;
-    border: 1px solid #00838F;
+    border: 1px solid var(--input-border-color);
     border-radius: 4px;
     font-size: 18px;
+    outline: none;
+}
+textarea:focus{
+    border: 2px solid var(--input-focus-color);
 }
 .submit_btn{
     padding: 1em;
-    border: 1px solid black;
+    border: 1px solid var(--input-border-color);
     border-radius: 5px;
+    transition: .3s;
+}
+.submit_btn:hover{
+    color: white;
+    background-color: var(--input-focus-color);
 }
 .contact_typ{
     line-height: 130%;
     margin: 4em 0;
-    border-left: 3px solid black;
+    border-left: 3px solid var(--input-border-color);
     padding-left: 10px;
     opacity: 0;
 }
 
 @media screen and (max-width:992px){
     #contact_form{
-        flex-direction:column-reverse;
+        flex-direction:column;
     }
     #send_msg, #contact_info{
         width:100%;

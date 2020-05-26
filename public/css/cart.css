@@ -1,5 +1,8 @@
+:root{
+    --focus_color:#4DD0E1;
+}
 #header{
-    background-color:darkorange;
+    background-color:#383838;
 }
 section{
     padding:1em 4em;
@@ -18,7 +21,7 @@ section{
 }
 #update_cart_btn{
     color: white;
-    background-color: black;
+    background-color: var(--focus_color);
 }
 #continue_shoping_btn{
     color: black;
@@ -51,12 +54,16 @@ section{
 
 #check_out_btn{
     color: white;
-    background-color: black;
+    background-color: var(--focus_color);
     border-radius: 5px;
     padding: 1em;
     text-align: center;
     line-height: 100%;   
     display: block;
+    transition: .3s;
+}
+#check_out_btn:hover{
+    background-color: #0097A7;
 }
 .cart_money{
     display: flex;

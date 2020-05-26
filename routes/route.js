@@ -21,5 +21,8 @@ router.get('/checkout',(req,res)=>{
 router.get('/contact',(req,res)=>{
     res.render('contactus')
 })
+router.get('/signin',(req,res)=>{
+    res.render('login')
+})
 
 module.exports = router

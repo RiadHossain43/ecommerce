@@ -11,7 +11,10 @@ import * as prod from './common_scripts/product_anim.js'
 
 // homepage animation functions....
 
-
+util.on_page_loaded(()=>{
+    let greet = util.eleCls('greet')
+    util.set_style(greet[0],{opacity: 1,animation:'greetInUp 1s'})
+})
 
 let featured_sec_anim = () => {
     let featured_prod_imgs = util.eleCls('featured_prod_img');

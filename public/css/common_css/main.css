@@ -1,3 +1,6 @@
+:root{
+    --add-background-color:#4DD0E1;
+}
 *{
     margin: 0;
     padding: 0;
@@ -6,11 +9,19 @@ body{
     font-family: 'Baloo Bhaina 2', cursive;  
     font-size: 18px;
 }
+#header{
+    position: relative;
+}
 .head_add{
+    /* box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    width: 100%; */
     color: white;
     text-align: center;
-    padding: 2em;
+    padding:1em 2em;
     line-height: 130%;
+    background-color: var(--add-background-color);
 }
 .greet{
     color: white;
@@ -93,8 +104,9 @@ a:hover{
     opacity: 0;
     transition: 1s;
     z-index: -1;
-    background-color: black;
+    background-color: #383838;
     color: white;
+    border-radius: 3px;
 }
 ul{
     list-style: none;

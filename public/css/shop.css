@@ -45,9 +45,13 @@ section{
     justify-content: space-evenly;
     padding-bottom: 2em;    
 }
+.catagory li{
+    cursor: pointer;
+}
 #main_shop{
     padding: 0 4em 4em;
     display: flex;
+    background-color: #EFF1F5;
 }
 #catagory_menu i,#filter_menu i{
     border-radius: 3px;

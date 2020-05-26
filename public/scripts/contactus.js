@@ -3,7 +3,8 @@ import * as util from './common_scripts/util.js'
 
 const fields = util.eleCls('field')
 const contact_type = util.eleCls('contact_typ')
-window.addEventListener('load', () => {
+
+util.on_page_loaded(()=>{
     let animdelay = 1;
     for (let i = 0; i < fields.length; i++){
         setTimeout(() => {
@@ -15,11 +16,12 @@ window.addEventListener('load', () => {
             util.set_style(contact_type[i], { animation: 'fadeInUp 1s ease', opacity: 1 })
         }, (++animdelay) * 300)
     }
-
 })
+
 
 window.addEventListener('scroll', () => {
     navigation.animate()
+    util.scroll_top_event()
 });
 
 navigation.handleMenu()

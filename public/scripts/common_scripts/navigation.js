@@ -11,7 +11,7 @@ let animate = () => {
     if (headbound.top < -120)
         util.set_style(nav, { backgroundColor: 'black', boxShadow: '0 0 0 black' });
     else
-        util.set_style(nav, { backgroundColor: 'transparent', boxShadow: '0 6px 20px black' });
+        util.set_style(nav, { backgroundColor: 'transparent', boxShadow: '0 6px 20px black'}); //, boxShadow: '0 6px 20px black' 
 
     if (company_info_bound.top < -company_info.offsetHeight) 
         util.set_style(nav,{position:'fixed'});

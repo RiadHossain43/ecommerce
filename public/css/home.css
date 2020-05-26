@@ -4,7 +4,7 @@ body{
     background-position: center;
     transition: 2s;
 }
-header{
+#header{
     height: 100vh; 
 }
 #body{
@@ -103,7 +103,9 @@ header{
 .featured_title,.featured_about{
     position: relative;
     z-index: 1;
+    line-height: 150%;
 }
+
 
 .load_more{
     position: relative;
@@ -147,6 +149,7 @@ header{
     }
     .our_features{
         padding: 1em;
+        margin: 1em;
         width: 70%;
     }
     .featured_prod_about,.featured_prod_img{

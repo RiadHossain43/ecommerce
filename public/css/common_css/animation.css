@@ -410,3 +410,31 @@
             opacity: 0;
   }
 }
+@keyframes popIn{
+  0% {
+    -webkit-transform: scale(.7);
+            transform: scale(.7);
+            opacity: 0;
+
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+            opacity: 1;
+  }
+
+}
+@keyframes popLogIn{
+  0% {
+    -webkit-transform: translate(-75%,-50%) scale(.7);
+            transform: translate(-75%,-50%) scale(.7);
+            opacity: 0;
+
+  }
+  100% {
+    -webkit-transform: translate(-75%,-50%) scale(1);
+            transform: translate(-75%,-50%) scale(1);
+            opacity: 1;
+  }
+
+}

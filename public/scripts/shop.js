@@ -2,6 +2,8 @@ import * as navigation from './common_scripts/navigation.js'
 import * as util from './common_scripts/util.js'
 import * as prod from './common_scripts/product_anim.js'
 
+
+
 let handler_catagory_bar = () => {
     let catagory_menu = util.eleID('catagory_menu')
     let catagories = util.eleCls('catagory')

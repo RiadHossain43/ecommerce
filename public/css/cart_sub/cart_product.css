@@ -8,6 +8,7 @@
     transition: 1s;
     overflow: hidden;
     max-height: 40vh;
+    opacity: 0;
 }
 .remove_prod_anim{
     opacity:0;
