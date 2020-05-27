@@ -8,6 +8,7 @@ let handler_catagory_bar = () => {
     let catagory_menu = util.eleID('catagory_menu')
     let catagories = util.eleCls('catagory')
     let sub_catagories = util.eleCls('sub_catagory')
+    let catagory_mob_icon = util.eleCls('catagory_mob_icon')
 
     if (window.innerWidth < 992) {
         catagory_menu.addEventListener('click', () => {
@@ -18,6 +19,7 @@ let handler_catagory_bar = () => {
         for (let i = 0; i < catagories.length; i++) {
             catagories[i].addEventListener('click', () => {
                 sub_catagories[i].classList.toggle('de_activate_catagory_mobile')
+                catagory_mob_icon[i].classList.toggle('catagory_mob_icon_rotate')
             })
         }
     }

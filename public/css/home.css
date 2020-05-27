@@ -23,6 +23,7 @@ body{
     width: 25%;
     margin: 3em 1em;
     text-align: center;
+    opacity: 0;
 }
 .our_features i{
     font-size: 5em;
@@ -155,6 +156,9 @@ body{
     .featured_prod_about,.featured_prod_img{
         width: 88%;
         margin: 2em .5em;  
+    }
+    .featured_prod_about{
+        padding: 1em 0;
     }
     .section_header{
         font-size: 3em;

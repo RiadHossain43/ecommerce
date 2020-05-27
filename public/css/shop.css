@@ -1,4 +1,6 @@
-
+:root{
+    --focus-color:#4DD0E1;
+}
 section{
     background-color: white;
 }
@@ -34,6 +36,11 @@ section{
     line-height: 100%;
     border: 1px solid white;
     border-radius: 4px;
+    transition: .3s;
+}
+.shop_link:hover{
+    background-color: var(--focus-color);
+    border: 0px solid white;
 }
 .shop_links a{
     color: white;
@@ -55,11 +62,19 @@ section{
 }
 #catagory_menu i,#filter_menu i{
     border-radius: 3px;
-    background-color: darkorange;
-    color:white;
+    color:var(--focus-color);
     margin: 0 .5em;
     padding: .5em;
     font-size: 18px;
+}
+.catagory_mob_icon{
+    display: none;
+    margin: 0 .5em;
+    color: var(--focus-color);
+    transition: .3s;
+}
+.catagory_mob_icon_rotate{
+    transform: rotate(180deg);
 }
 #filter_sec{
     width: 20%;
@@ -68,7 +83,7 @@ section{
     flex-direction: column;
     overflow: hidden;
 }
- #hide_filter_bar{
+#hide_filter_bar{
     float: right;
     margin:2em;
     display: none;
@@ -229,11 +244,14 @@ section{
         /* background-color: blue; */
     }
     .filter_sec_title{
-        margin:0;   
+        margin-top: 2em;
     }
     #catagories{
         padding: 0 2em;
         flex-direction: column;  
+    }
+    .catagory_mob_icon{
+        display: inline-block;
     }
     .shop_links{
         overflow-x: scroll;
@@ -295,6 +313,10 @@ section{
     .shop_links{
         overflow-x: scroll;
     }
+    .shop_links a{
+        font-size: 16px;
+    }
+    
     #main_shop{
         padding: 0 0em 2em;
         display: flex;

@@ -76,7 +76,7 @@ section{
 }
 
 ::placeholder{
-    color: black;
+    color: #757575;
 }
 .input:focus{
     border: 2px solid var(--input-focus-color);

@@ -30,6 +30,7 @@ body{
     line-height: 100%;
     opacity: 1;
     transition: 1s;
+    text-shadow: 0 10px 10px black;
 }
 .scrolldown{
     color: white;

@@ -1,3 +1,6 @@
+:root{
+    --focus-color:#4DD0E1;
+}
 #company_info,nav{
     z-index: 2;
 }
@@ -47,6 +50,10 @@ nav{
 .page_links_pc a,.page_links_mobile a{
     text-decoration: none;
     color: white;
+    transition: .3s;
+}
+.page_links_pc a:hover,.page_links_mobile a:hover{
+    color: darkorange;
 }
 #search,.company_contacts{
     padding: 0 4.5em;
@@ -67,6 +74,7 @@ nav{
 }
 #search button{
     margin: auto 2px;
+    background-color: var(--focus-color);
 }
 .mobile_link,.pc_link{
     margin-right: 2.5em;

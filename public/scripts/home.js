@@ -55,11 +55,27 @@ let body_back_img = ()=>{
         it++;
     },5000);
 }
+let our_service_anim = ()=>{
+    let our_features = util.eleCls('our_features')
+    let animdelay = 1
+    for(let i=0;i<our_features.length;i++){
+        let our_features_bound = our_features[i].getBoundingClientRect()
+        if(our_features_bound.top<window.innerHeight*.75 && window.innerWidth>992){
+            setTimeout(() => {
+                util.set_style(our_features[i], { animation: 'fadeInUp 1s ease', opacity: 1 })
+            }, (++animdelay) * 300)
+        }
+        if(our_features_bound.top<window.innerHeight*.75 && window.innerWidth<=992){
+            util.set_style(our_features[i], { animation: 'fadeInUp 1s ease', opacity: 1 })
+        }
+    }
+}
 
 // homepage animation handling...
 window.addEventListener('scroll', () => {
     prod.prod_sec_Anim();
     featured_sec_anim();
+    our_service_anim()
     util.scroll_top_event();
     subscribe.animate();
     navigation.animate();

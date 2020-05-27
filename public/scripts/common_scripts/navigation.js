@@ -26,7 +26,7 @@ let handleMenu = () => {
     let back = util.eleID('backlink');
     let link = util.eleCls('mobile_link');
     hamberger.addEventListener('click', () => {
-        util.set_style(menu, { clipPath: "circle(2200px at 100% 0%)" });
+        util.set_style(menu, { clipPath: "circle(1200px at 100% 0%)" });
         let animDelay = .3;
         for (var i = 0; i < link.length; i++) {
             util.set_style(link[i], { opacity: 1, animation: `slide-right 0.9s both ${animDelay}s` });

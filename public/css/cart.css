@@ -44,6 +44,11 @@ section{
     border:1px solid black;
     width:auto;
     margin: 3px 0;
+    transition: .3s;
+}
+#cuppon_form button:hover{
+    background-color: black;
+    color: white;
 }
 #purchase_detail_fianl{
     width: 30%;
