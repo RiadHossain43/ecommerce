@@ -1,4 +1,4 @@
-<%- include('./includes/common_view/head.ejs') %>
+<%- include('../includes/common_view/head.ejs') %>
 
 <link rel="stylesheet" type="text/css" href="/css/common_css/related_products.css">
 <link rel="stylesheet" type="text/css" href="/css/cart.css">
@@ -11,7 +11,7 @@
 <body>
 
     <header id="header">
-        <%- include('./includes/common_view/navigation.ejs') %>
+        <%- include('../includes/common_view/navigation.ejs') %>
         <div class="head_add">This is the haed add</div>
     </header>
 
@@ -33,9 +33,9 @@
                         <p>Total</p>
                     </div>
                 </div>
-                <%- include('./includes/cart_subview/cart_product.ejs') %>
-                <%- include('./includes/cart_subview/cart_product.ejs') %>
-                <%- include('./includes/cart_subview/cart_product.ejs') %>
+                <%- include('../includes/cart_subview/cart_product.ejs') %>
+                <%- include('../includes/cart_subview/cart_product.ejs') %>
+                <%- include('../includes/cart_subview/cart_product.ejs') %>
             </div>
             <div class="help_bts">
                 <button id="update_cart_btn">Update Cart</button>
@@ -68,8 +68,8 @@
         </div>
     </section>
 
-    <%- include('./includes/common_view/footer.ejs') %>
+    <%- include('../includes/common_view/footer.ejs') %>
 
     <script type="module" src="/scripts/cart.js"></script>
 
-    <% -include('./includes/common_view/end.ejs') %>
+    <% -include('../includes/common_view/end.ejs') %>

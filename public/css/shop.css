@@ -56,8 +56,9 @@ section{
     cursor: pointer;
 }
 #main_shop{
-    padding: 0 4em 4em;
+    padding: 0 0rem 3rem;
     display: flex;
+    flex-direction: column;
     background-color: #EFF1F5;
 }
 #catagory_menu i,#filter_menu i{
@@ -76,21 +77,40 @@ section{
 .catagory_mob_icon_rotate{
     transform: rotate(180deg);
 }
-#filter_sec{
-    width: 20%;
-    margin:0 auto;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-}
 #hide_filter_bar{
     float: right;
     margin:2em;
     display: none;
 }
+
+#filter_sec{
+    width: 100%;
+    justify-content: flex-start;
+}
 #filter_sec a{
     color: black;
 }
+#hide_filter_bar{
+    display: block;
+}
+.activate_filter_view{
+    background-color: white;
+    overflow-y: scroll;
+    height: auto;
+    position: fixed;
+    left: -100%;
+    width: 30%;
+    height: 100%;
+    top:0;
+    opacity: 1;
+    z-index: 2;
+    transition: 1s;
+    padding: 0 .5em;
+}
+.filter_view_slide_inout{
+    left: 0;
+}
+
 .filter_sec_title{
     margin-top: 2.1em;
     font-size: 16px;
@@ -100,6 +120,7 @@ section{
     margin-top:2.1em;
     font-size: 16px;
     border: 1px solid gray;
+    box-sizing: border-box;
 }
 
 .filter_type{
@@ -128,10 +149,6 @@ section{
     border-radius: 3px ;
     background-color: darkorange;
     color: white;
-}
-#shop_products_container{
-    width: 78%;
-    margin:0 auto;
 }
 
 /* helper */
@@ -241,7 +258,6 @@ section{
     .section_title{
         text-align: left;
         padding: 1em 2em;
-        /* background-color: blue; */
     }
     .filter_sec_title{
         margin-top: 2em;
@@ -263,13 +279,8 @@ section{
     #shop_products_container{
         width: auto;
     }
-    #filter_sec{
-        width: 100%;
-        /* background-color: red; */
-        justify-content: flex-start;
-    }
     #main_shop{
-        padding: 0 1em 4em;
+        padding: 0 1rem 2rem;
         display: flex;
     }
     #promotions{
@@ -278,7 +289,6 @@ section{
     .promote{
         flex: 1 1 40%;
     }
-    
     .catagory{
         height:auto;
         transition: 1s;
@@ -287,26 +297,8 @@ section{
     .de_activate_catagory_mobile{
         height: 0; 
     }
-    
-    #hide_filter_bar{
-        display: block;
-    }
-    .activate_mobile_filter_view{
-        background-color: white;
-        overflow-y: scroll;
-        height: auto;
-        position: fixed;
-        left: -100%;
-        width: 80%;
-        height: 100%;
-        top:0;
-        opacity: 1;
-        z-index: 2;
-        transition: 1s;
-        padding: 0 .5em;
-    }
-    .filter_view_slide_inout{
-        left: 0;
+    .activate_filter_view{
+        width: 40%;   
     }
 }
 @media screen and (max-width:768px){
@@ -350,5 +342,8 @@ section{
     }
     .sale_dead_time{
         padding:1em;
+    }
+    .activate_filter_view{
+        width: 80%;   
     }
 }

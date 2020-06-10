@@ -1,4 +1,4 @@
-<%- include('./includes/common_view/head.ejs') %>
+<%- include('../includes/common_view/head.ejs') %>
 
 <link rel="stylesheet" type="text/css" href="/css/home.css">
 <link rel="stylesheet" type="text/css" href="/css/common_css/product_card.css">
@@ -7,12 +7,12 @@
 
 <body>
 
-	<%- include('./includes/common_view/loading.ejs') %>
+	<%- include('../includes/common_view/loading.ejs') %>
 
 	<div id="body">
-		
+
 		<header id="header">
-			<%- include('./includes/common_view/navigation.ejs') %>
+			<%- include('../includes/common_view/navigation.ejs') %>
 			<h1 class="greet centralize">Say something fancy of your company here</h1>
 			<i class="fas fa-angle-double-down greet scrolldown"></i>
 		</header>
@@ -45,77 +45,117 @@
 			<h1 class="section_header">JUST FOR YOU</h1>
 		</section>
 		<section class="home_products">
-			<div class="products_container">
-				<% for(let i=1; i < 10; i++) { %>
-					<a href="/product/detail" class="product">
+			<% if (prods.length > 0) { %>
+				<div class="products_container">
+					<% for (let product of prods) { %>
+					<a href="/products/<%= product._id %>" class="product">
 						<div class="product_img">
 							<div class="detail">
 								<h2 class="dt">View</h2>
 							</div>
 						</div>
 						<div class="product_detail_short">
-							<h1>A fancy title of the product</h1>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing
-								elit. Molestias suscipit voluptate facilis autem
-								laudantium nemo ...</p>
+							<h1><%= product.title %></h1>
+							<p>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+								<i class="far fa-star"></i>
+							</p>
 						</div>
 						<div class="product_footer">
 							<form class="add_cart_form" action="">
-								<h3 class="product_price">Price: 27$</h3>
+								<h3 class="product_price">Price: <%= product.price %></h3>
 								<button class="add_to_cart_btn">Add to cart</button>
 							</form>
 						</div>
 					</a>
 					<% } %>
-			</div>
-		</section>
-		
-		<section class="load_more">
-			<button class="load_more_btn centralize">Load More</button>
+				</div>
+			<% } else { %>
+				<h1 style="text-align: center;">No Products Found!</h1>
+			<% } %>
+			<!-- <div class="products_container">
+				<% for(let i=1; i < 12; i++) { %>
+				<a href="/product/detail" class="product">
+					<div class="product_img">
+						<div class="detail">
+							<h2 class="dt">View</h2>
+						</div>
+					</div>
+					<div class="product_detail_short">
+						<h1>A fancy title of the product</h1>
+						<p>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star-half-alt"></i>
+							<i class="far fa-star"></i>
+						</p>
+					</div>
+					<div class="product_footer">
+						<form class="add_cart_form" action="">
+							<h3 class="product_price">Price: 27$</h3>
+							<button class="add_to_cart_btn">Buy Now</button>
+						</form>
+					</div>
+				</a>
+				<% } %>
+			</div> -->
 		</section>
 
-		<%- include('./includes/common_view/subscription.ejs') %>
+		<section class="load_more">
+			<button class="load_more_btn centralize">View Shop</button>
+		</section>
+
+		<%- include('../includes/common_view/subscription.ejs') %>
 
 		<section class="list_title">
 			<h1 class="section_header">NEW ARRIVALS</h1>
 		</section>
 		<section class="home_products">
 			<div class="products_container">
-				<% for(let i=1; i < 10; i++) { %>
-					<a href="/product/detail" class="product">
-						<div class="product_img">
-							<div class="detail">
-								<h2 class="dt">View</h2>
-							</div>
+				<% for(let i=1; i < 13; i++) { %>
+				<a href="/product/detail" class="product">
+					<div class="product_img">
+						<div class="detail">
+							<h2 class="dt">View</h2>
 						</div>
-						<div class="product_detail_short">
-							<h1>A fancy title of the product</h1>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing
-								elit. Molestias suscipit voluptate facilis autem
-								laudantium nemo ...</p>
-						</div>
-						<div class="product_footer">
-							<form class="add_cart_form" action="">
-								<h3 class="product_price">Price: 27$</h3>
-								<button class="add_to_cart_btn">Add to cart</button>
-							</form>
-						</div>
-					</a>
-					<% } %>
+					</div>
+					<div class="product_detail_short">
+						<h1>A fancy title of the product</h1>
+						<p>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star-half-alt"></i>
+							<i class="far fa-star"></i>
+						</p>
+					</div>
+					<div class="product_footer">
+						<form class="add_cart_form" action="">
+							<h3 class="product_price">Price: 27$</h3>
+							<button class="add_to_cart_btn">Buy Now</button>
+						</form>
+					</div>
+				</a>
+				<% } %>
 			</div>
 		</section>
 		<section class="load_more">
 			<button class="load_more_btn centralize">Load More</button>
 		</section>
-		
+
 		<section id="featured_products">
-			<h1 class="section_header">FEATURED PRODUCTS</h1>
+			<h1 class="section_header">FEATURED REVIEWS</h1>
 			<div class="featured_prod_wrapper">
+				<div class="featured_design_extra"></div>
 				<a href="/product/detail" class="featured_prod_img">
-					<img src="/images/sample_9.png" class="centralize"alt="">
+					<img src="/images/sample_9.png" class="centralize" alt="">
 					<div class="overlay centralize"></div>
 					<h3 class="featured_view_more centralize">View Details</h3>
-					
+
 				</a>
 				<div class="featured_prod_about">
 					<div class="featured_product_about_detail">
@@ -142,6 +182,7 @@
 				</div>
 			</div>
 			<div class="featured_prod_wrapper">
+				<div class="featured_design_extra"></div>
 				<div class="featured_prod_about">
 					<div class="featured_product_about_detail">
 						<h1 class="featured_title">A fancy title of the product</h1>
@@ -174,11 +215,9 @@
 		</section>
 		<button class="scroll_top"><i class="fas fa-chevron-up"></i></button>
 
-		<%- include('./includes/common_view/footer.ejs') %>
+		<%- include('../includes/common_view/footer.ejs') %>
 
 	</div>
 
 
 	<script type="module" src="/scripts/home.js"></script>
-
-	 

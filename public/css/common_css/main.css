@@ -1,12 +1,14 @@
+@import url('./fonts.css');
 :root{
     --add-background-color:#4DD0E1;
 }
 *{
     margin: 0;
     padding: 0;
+    /* box-sizing: border-box; */
 }
 body{
-    font-family: 'Baloo Bhaina 2', cursive;  
+    font-family: Roboto, cursive;  
     font-size: 18px;
 }
 #header{

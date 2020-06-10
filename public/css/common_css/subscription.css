@@ -2,17 +2,17 @@
     background: transparent;
     text-align: center;
     color: white;
+    padding: 5em 0;
 }
 #subscribe ::placeholder{
     color: white;
 }
 #subscription_form{
     width: 100%;
-    margin: 0 auto 4em;
 }
 #sb_txt{
     font-size: 3em;
-    margin: 1em .5em 0;
+    margin: 0 .5em;
     line-height: 150%;
     opacity: 0;
 }
@@ -41,11 +41,17 @@
 }
 
 @media screen and (max-width:768px){
+    #subscribe{
+        background: transparent;
+        text-align: center;
+        color: white;
+        padding: 2em 0;
+    }
     #subscription_form{
         display: flex;
         flex-direction: column;
         width: 80%;
-        margin: 1em auto 4em;
+        margin: 0 auto;
     }
     #subscription_form input{
         width: auto;

@@ -2,8 +2,6 @@ import * as navigation from './common_scripts/navigation.js'
 import * as util from './common_scripts/util.js'
 import * as prod from './common_scripts/product_anim.js'
 
-
-
 let handler_catagory_bar = () => {
     let catagory_menu = util.eleID('catagory_menu')
     let catagories = util.eleCls('catagory')
@@ -25,11 +23,11 @@ let handler_catagory_bar = () => {
     }
 }
 let habdle_filter_bar = () => {
-    let filter_mob_view = util.eleCls('activate_mobile_filter_view')
+    let filter_mob_view = util.eleCls('activate_filter_view')
     let filter_menu = util.eleID('filter_menu')
     let hide_filter_bar = util.eleID('hide_filter_bar')
 
-    if (window.innerWidth < 992) {
+    if (window.innerWidth < 1600) {
         filter_menu.addEventListener('click', () => {
             filter_mob_view[0].classList.add('filter_view_slide_inout')
         })

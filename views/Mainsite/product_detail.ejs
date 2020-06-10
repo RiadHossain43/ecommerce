@@ -1,4 +1,4 @@
-<%- include('./includes/common_view/head.ejs') %>
+<%- include('../includes/common_view/head.ejs') %>
 <link rel="stylesheet" type="text/css" href="/css/product_detail.css">
 <link rel="stylesheet" type="text/css" href="/css/product_detail_sub/review.css">
 <link rel="stylesheet" type="text/css" href="/css/common_css/related_products.css">
@@ -9,8 +9,8 @@
 <body>
 
     <header id="header">
-        <%- include('./includes/common_view/navigation.ejs') %>
-        <%- include('./includes/common_view/headadd.ejs') %>
+        <%- include('../includes/common_view/navigation.ejs') %>
+        <%- include('../includes/common_view/headadd.ejs') %>
     </header>
 
     <section id="product_overview">
@@ -63,21 +63,21 @@
             <div id="detail_display_box">
                 <!----order matters here----->
                 <div class="all_prod_info_container activate">
-                    <%- include('./includes/product_detail_subview/description.ejs') %>
+                    <%- include('../includes/product_detail_subview/description.ejs') %>
                 </div>
                 <div class="all_prod_info_container">
-                    <%- include('./includes/product_detail_subview/features.ejs') %>
+                    <%- include('../includes/product_detail_subview/features.ejs') %>
                 </div>
                 <div class="all_prod_info_container">
-                    <%- include('./includes/product_detail_subview/review.ejs') %>
+                    <%- include('../includes/product_detail_subview/review.ejs') %>
                 </div>
             </div>
         </div>
     </section>
 
-    <%- include('./includes/common_view/related_products.ejs') %>
-    <%- include('./includes/common_view/footer.ejs') %>
+    <%- include('../includes/common_view/related_products.ejs') %>
+    <%- include('../includes/common_view/footer.ejs') %>
 
     <script type="module" src="/scripts/product_detail.js"></script>
 
-    <% -include('./includes/common_view/end.ejs') %>
+    <% -include('../includes/common_view/end.ejs') %>

@@ -1,4 +1,4 @@
-<%- include('./includes/common_view/head.ejs') %>
+<%- include('../includes/common_view/head.ejs') %>
 
 <link rel="stylesheet" type="text/css" href="/css/contactus.css">
 
@@ -8,12 +8,12 @@
 <body>
 
     <header id="header">
-        <%- include('./includes/common_view/navigation.ejs') %>
-        <%- include('./includes/common_view/headadd.ejs') %>
+        <%- include('../includes/common_view/navigation.ejs') %>
+        <%- include('../includes/common_view/headadd.ejs') %>
     </header>
 
     <section>
-        <h1 style="text-align: center;">Contact Us</h1>
+        <h1 style="text-align: start;">Contact Us</h1>
         <form action="" id="contact_form">
             <div id="send_msg">
                 <div class="half_width field"><input class="input" type="text" name="name" id="country" placeholder="Country"></div>
@@ -45,8 +45,8 @@
     </section>
 
     <button class="scroll_top"><i class="fas fa-chevron-up"></i></button>
-    <%- include('./includes/common_view/footer.ejs') %>
+    <%- include('../includes/common_view/footer.ejs') %>
 
     <script type="module" src="/scripts/contactus.js"></script>
 
-    <% -include('./includes/common_view/end.ejs') %>
+    <% -include('../includes/common_view/end.ejs') %>

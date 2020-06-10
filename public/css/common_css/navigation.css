@@ -7,7 +7,6 @@
 #menu{
     z-index: 3;
 }
-
 #company_info{
     height: 50px;
     background-color: black;
@@ -41,11 +40,13 @@ nav{
     box-shadow: 0 6px 20px black;
     transition: .3s;
     color: white;
+    padding:.5rem 0;
 }
 .page_links_pc,.page_links_mobile{
     display: flex;
     list-style: none;
     padding:0 4.5em;
+    margin: .8rem 0;
 }
 .page_links_pc a,.page_links_mobile a{
     text-decoration: none;
@@ -62,18 +63,19 @@ nav{
 #search_form{
     display: flex;
     margin-left: auto;
+    box-sizing: border-box;
 }
 #search input,#search button{
     margin: auto;
-    height: 50%;
+    height: 100%;
     border-radius: 3px;
     outline: none;
     border: none;
-    padding: 0 1em;
+    padding: 0 .5em;
     font-size: 16px;
 }
 #search button{
-    margin: auto 2px;
+    margin: 0 2px;
     background-color: var(--focus-color);
 }
 .mobile_link,.pc_link{
